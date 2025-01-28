@@ -1,0 +1,85 @@
+{
+    "type": "FRAME",
+    "name": "About Us Section",
+    "layoutMode": "VERTICAL",
+    "itemSpacing": 20,
+    "padding": 50,
+    "children": [
+        {
+            "type": "TEXT",
+            "name": "Title",
+            "characters": "About Us",
+            "fontSize": 36,
+            "fontWeight": "BOLD",
+            "textAlign": "CENTER"
+        },
+        {
+            "type": "TEXT",
+            "name": "Description",
+            "characters": "We are a team of passionate individuals dedicated to creating innovative solutions. Our mission is to deliver high-quality products that make a difference in people's lives.",
+            "fontSize": 18,
+            "textAlign": "CENTER",
+            "lineHeight": 1.5
+        },
+        {
+            "type": "FRAME",
+            "name": "Image Container",
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 20,
+            "padding": 20,
+            "children": [
+                {
+                    "type": "RECTANGLE",
+                    "name": "Image Placeholder 1",
+                    "cornerRadius": 10,
+                    "width": 150,
+                    "height": 150,
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.9,
+                                "g": 0.9,
+                                "b": 0.9
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "RECTANGLE",
+                    "name": "Image Placeholder 2",
+                    "cornerRadius": 10,
+                    "width": 150,
+                    "height": 150,
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.9,
+                                "g": 0.9,
+                                "b": 0.9
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "RECTANGLE",
+                    "name": "Image Placeholder 3",
+                    "cornerRadius": 10,
+                    "width": 150,
+                    "height": 150,
+                    "fills": [
+                        {
+                            "type": "SOLID",
+                            "color": {
+                                "r": 0.9,
+                                "g": 0.9,
+                                "b": 0.9
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+/* Основні стилі для секції "Про нас" */
+.aboutUsSection {
+    width: 100%;
+   margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #003366;
+    /* Темно-синій фон */
+    color: white;
+    /* Білий текст */
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.missionSection {
+    background-color: #ffffff;
+    /* Білий фон для місії */
+    color: #003366;
+    /* Темно-синій колір для тексту */
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.missionTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.missionDescription {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.teamSection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.teamMember {
+    background-color: #ffffff;
+    /* Білий фон для членів команди */
+    color: #003366;
+    /* Темно-синій колір для тексту */
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.teamMember img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.teamMemberName {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.teamMemberRole {
+    font-size: 16px;
+    color: #666666;
+}
+
+.ctaButton {
+    padding: 15px 30px;
+    background-color: #ff3333;
+    /* Червоний колір для кнопки */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #e60000;
+    /* Темніший червоний при наведенні */
+}
+
+/* Стилі для планшетів (від 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .title {
+        font-size: 36px;
+        /* Зменшення заголовка на планшетах */
+    }
+
+    .description {
+        font-size: 16px;
+        /* Зменшення розміру шрифтів для опису */
+    }
+
+    .missionSection {
+        max-width: 600px;
+        /* Обмежуємо ширину для планшетів */
+        margin: 0 auto;
+        /* Центруємо блок */
+    }
+
+    .missionTitle {
+        font-size: 32px;
+        /* Зменшення розміру заголовка місії */
+    }
+
+    .missionDescription {
+        font-size: 16px;
+        /* Зменшення шрифту опису місії */
+    }
+
+    .teamSection {
+        flex-direction: column;
+        /* Визначаємо вертикальне вирівнювання елементів */
+        align-items: center;
+        /* Центруємо елементи */
+        margin-bottom: 40px;
+    }
+
+    .teamMember {
+        width: 80%;
+        /* Зменшуємо ширину елементів команди */
+        margin: 20px 0;
+        /* Збільшуємо відступи між елементами */
+    }
+
+    .teamMemberName {
+        font-size: 20px;
+        /* Зменшення розміру шрифтів для імені */
+    }
+
+    .teamMemberRole {
+        font-size: 14px;
+        /* Зменшення розміру шрифтів для ролі */
+    }
+
+    .ctaButton {
+        padding: 12px 25px;
+        /* Зменшення кнопки на планшетах */
+    }
+}
+
+/* Стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        /* Зменшення заголовка на мобільних */
+    }
+
+    .missionSection {
+        max-width: 300px;
+    }
+
+    .description {
+        font-size: 14px;
+        /* Зменшення розміру шрифтів для опису */
+    }
+
+    .teamSection {
+        flex-direction: column;
+        /* Одиночні блоки для мобільних */
+        align-items: center;
+    }
+
+    .teamMember {
+        width: 80%;
+        /* Зменшення ширини елементів */
+        margin: 20px 0;
+    }
+
+    .ctaButton {
+        padding: 12px 25px;
+        /* Зменшення кнопки на мобільних */
+    }
+}
