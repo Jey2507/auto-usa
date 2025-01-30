@@ -1,11 +1,12 @@
-import AboutUs from "../../components/AboutUsImmigration/AboutUsImmigration";
+import AboutUsImmigration from "../../components/AboutUsImmigration/AboutUsImmigration";
 import FaqImmigration from "../../components/FaqImmigration/FaqImmigration";
+
 import ImmigrationServices from "../../components/ServicesImmigration/ServicesImmigration";
 // import css from "./ImmigrationPage.module.css"
 export default function ImmigrationPage() {
     return (
         <>
-            <AboutUs />
+            <AboutUsImmigration />
             <ImmigrationServices/>
             <FaqImmigration/>
         </>
