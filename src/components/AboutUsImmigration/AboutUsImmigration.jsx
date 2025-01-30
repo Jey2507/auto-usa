@@ -18,7 +18,7 @@ const teamMembers = [
     },
 ];
 
-const AboutUs = () => {
+const AboutUsImmigration = () => {
     return (
         <section className={styles.aboutUsSection}>
             <h1 className={styles.title}>Про нас</h1>
@@ -48,4 +48,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default AboutUsImmigration;

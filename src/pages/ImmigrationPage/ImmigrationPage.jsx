@@ -1,12 +1,15 @@
-import AboutUs from "../../components/AboutUsImmigration/AboutUsImmigration";
+import AboutUsImmigration from "../../components/AboutUsImmigration/AboutUsImmigration";
 import FaqImmigration from "../../components/FaqImmigration/FaqImmigration";
-import ImmigrationServices from "../../components/ServicesImmigration/ServicesImmigration";
+import PricesImmigration from "../../components/PricesImmigration/PricesImmigration";
+import ServicesImmigration from "../../components/ServicesImmigration/ServicesImmigration";
 import css from "./ImmigrationPage.module.css"
 export default function ImmigrationPage() {
     return (
         <div className={css.container}>
-            <AboutUs />
-            <ImmigrationServices/>
-        <FaqImmigration/></div>
+            <AboutUsImmigration />
+            <ServicesImmigration />
+            <PricesImmigration/>
+            <FaqImmigration />
+        </div>
     )
 }

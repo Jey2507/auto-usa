@@ -1,6 +1,5 @@
 /* Основні стилі для секції послуг імміграції */
 .immigrationServicesSection {
-    max-width: 1440px;
     margin: 0 auto;
     padding: 50px 20px;
     background-color: #003366;
@@ -154,5 +153,39 @@
     .ctaButton {
         padding: 12px 25px;
         /* Зменшення кнопки на мобільних */
+    }
+}
+
+/* Стилі для ноутбуків (від 1024px до 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .title {
+        font-size: 42px;
+        /* Зменшення заголовка на ноутбуках */
+    }
+
+    .description {
+        font-size: 17px;
+        /* Легке зменшення шрифту для опису */
+    }
+
+    .servicesGrid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Три стовпці для ноутбуків */
+        gap: 35px;
+    }
+
+    .serviceItem {
+        padding: 28px;
+        /* Відступи в елементах послуг для ноутбуків */
+    }
+
+    .serviceIcon {
+        font-size: 45px;
+        /* Іконки середнього розміру для ноутбуків */
+    }
+
+    .ctaButton {
+        padding: 14px 28px;
+        /* Трохи менші кнопки для ноутбуків */
     }
 }

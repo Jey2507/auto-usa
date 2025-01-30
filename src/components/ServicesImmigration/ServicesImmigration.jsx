@@ -33,7 +33,7 @@ const services = [
     },
 ];
 
-const ImmigrationServices = () => {
+const ServicesImmigration = () => {
     return (
         <section className={styles.immigrationServicesSection}>
             <h1 className={styles.title}>Наші послуги імміграції</h1>
@@ -54,4 +54,4 @@ const ImmigrationServices = () => {
     );
 };
 
-export default ImmigrationServices;
+export default ServicesImmigration;
