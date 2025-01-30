@@ -64,6 +64,11 @@
   margin-left: auto;
 }
 
+.burger svg {
+  width: 28px;
+  height: 28px;
+}
+
 .navHeader {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s linear;
   position: fixed;
