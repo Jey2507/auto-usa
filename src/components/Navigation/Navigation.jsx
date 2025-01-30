@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import css from "../Navigation/Navigation.module.css"
 import Logo from "../../assets/images/logo.png";
 import { useState } from "react";
-// import burger from "../../assets/images/reviews/burger-bar.png";
 
 const getNavLinkClass = ({ isActive }) => {
     return clsx(css.link, isActive && css.active);

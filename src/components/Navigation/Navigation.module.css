@@ -17,6 +17,9 @@
   margin: 0 auto;
   background-color: #5A0000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  z-index: 101;
+  position: fixed;
+  top: 0;
 }
 
 .imageLogo {
@@ -30,7 +33,7 @@
   color: #ffd900c2;
   letter-spacing: 0.4px;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1;
   margin: 0;
   margin-left: 6px;
@@ -47,7 +50,7 @@
 
 .spanLogoText {
   font-size: 32px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
 }
 
 .burger {
@@ -64,11 +67,11 @@
 .navHeader {
   transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s linear;
   position: fixed;
-  top: 60;
+  top: 0;
   right: 0;
   height: 100%;
   z-index: 100;
-  padding: 16px;
+  padding: 76px 16px 16px 16px;
 }
 
 .navClosed {
@@ -172,4 +175,7 @@
     display: none;
   }
 
+  .navBox {
+    position: relative;
+  }
 }
