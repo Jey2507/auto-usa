@@ -1,0 +1,175 @@
+.navbar {
+  display: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 380px;
+}
+
+.navBox {
+  width: 100%;
+  height: 60px;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #5A0000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.imageLogo {
+  width: 52px;
+  height: 40px;
+}
+
+.logoText {
+  width: max-content;
+  text-transform: uppercase;
+  color: #ffd900c2;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  margin: 0;
+  margin-left: 6px;
+  margin-bottom: -8px;
+  display: flex;
+  align-items: end;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spanLogoText {
+  font-size: 32px;
+  margin-bottom: -2px;
+}
+
+.burger {
+  width: 36px;
+  height: 36px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-left: auto;
+}
+
+.navHeader {
+  transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s linear;
+  position: fixed;
+  top: 60;
+  right: 0;
+  height: 100%;
+  z-index: 100;
+  padding: 16px;
+}
+
+.navClosed {
+  transform: translateX(240px); 
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navOpen {
+  transform: translateX(0%); 
+  opacity: 1;
+  background-color: #520000;
+}
+
+.link {
+  text-decoration: none;
+  color: #f5f5f5e0;
+  width: 110px;
+  display: flex;
+  font-size: 18px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: color 100ms linear;
+  border: 2px solid #f5f5f5da;
+  border-radius: 6px;
+  transition: border-color 250ms linear;
+}
+
+.active {
+  color:#ffd900c2;
+  border-color: #ffd900c2;
+}
+
+.link:hover {
+  border-color: #ffd900c2;
+}
+
+.listHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+@media screen and (min-width: 780px) {
+
+  .navBox {
+    height: 70px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .imageLogo {
+    width: 72px;
+  }
+
+  .logoText {
+    width: max-content;
+    text-transform: uppercase;
+    color: #ffd900c2;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 0.8;
+    margin: 0;
+    margin-left: 12px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: end;
+  }
+  
+  .logoBox {
+    display: flex;
+  }
+  
+  .spanLogoText {
+    font-size: 52px;
+    margin-bottom: -2px;
+  }
+
+  .burger {
+    width: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    background-color: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding-right: 40px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+}
