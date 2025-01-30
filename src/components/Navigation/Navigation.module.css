@@ -54,8 +54,8 @@
 }
 
 .burger {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   background: none;
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@
   margin-left: auto;
 }
 
-.svgBurger {
+svg {
   width: 28px;
   height: 28px;
 }
