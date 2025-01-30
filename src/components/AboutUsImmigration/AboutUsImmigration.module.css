@@ -255,4 +255,8 @@
         padding: 15px 30px;
         /* Розмір кнопки для комп'ютерів */
     }
+
+    .aboutUsSection{
+        width: 100%;
+    }
 }
