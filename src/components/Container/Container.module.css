@@ -6,7 +6,7 @@ min-width: 420px;
 
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 780px;
+        max-width: 768px;
         width: 100%;
     }
 }

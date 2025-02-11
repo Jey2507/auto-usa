@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import css from "../Navigation/Navigation.module.css"
 import Logo from "../../assets/images/logo.png";
 import { useState } from "react";
-// import burger from "../../assets/images/reviews/burger-bar.png";
 
 const getNavLinkClass = ({ isActive }) => {
     return clsx(css.link, isActive && css.active);
@@ -27,7 +26,7 @@ export default function Navigation() {
               <NavLink to="/auto" className={getNavLinkClass}>Auto</NavLink>
           </nav>
           <button onClick={toggleMenu} className={css.burger}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <svg className={css.svgBurger} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none">
                 <path d="M3.5 6H24.5M3.5 14H24.5M3.5 22H24.5" stroke="#FFD900c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button> 
