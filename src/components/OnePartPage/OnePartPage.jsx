@@ -20,6 +20,16 @@ const OnePartPage = () => {
           </p>
         </div>
       </div>
+      <div>
+        <div>
+          <h2>Даты подачи заявлений на TPS</h2>
+          <ul>
+            <li>✅ Первоначальная подача TPS (для тех, кто подаёт впервые) – до 19 апреля 2025 года.</li>
+            <li>✅ Переподача и продление TPS (для тех, у кого статус уже есть) – до 18 марта 2025 года.</li>
+          </ul>
+          <p>Подача TPS: Электронно или в печатном виде</p>
+        </div>
+      </div>
 
       {/* <div className={styles.section}>
         <h2 className={styles.sectionTitle}>Temporary Protected Status (TPS) для украинцев</h2>

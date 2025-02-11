@@ -1,7 +1,8 @@
 .container {
     width: 100%;
-min-width: 420px;
+    min-width: 420px;
     margin: 0 auto;
+    max-width: 480px;
 }
 
 @media screen and (min-width: 768px) {
@@ -13,7 +14,7 @@ min-width: 420px;
 
 @media screen and (min-width: 1440px) {
     .container {
-        max-width: 1540px;
+        max-width: 1440px;
         width: 100%;
     }
 }

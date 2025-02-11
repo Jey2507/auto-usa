@@ -10,10 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< Updated upstream
+=======
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.4",
+>>>>>>> Stashed changes
     "@shadcn/ui": "^0.0.4",
     "accordion-js": "^3.4.0",
     "accordionjs": "^2.1.2",
     "axios": "^1.6.8",
+    "card": "^2.5.4",
     "clsx": "^2.1.1",
     "lucide-react": "^0.474.0",
     "modern-normalize": "^3.0.1",
