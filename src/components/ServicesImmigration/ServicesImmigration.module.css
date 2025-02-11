@@ -131,6 +131,7 @@
 
     .serviceItem {
         padding: 25px;
+        width: 100%;height: 400px;
     }
 
     .serviceIcon {
@@ -162,8 +163,7 @@
 
     .serviceItem {
         padding: 20px;
-        width: 100%;
-        height: 400px;
+        width: 100%;height: max-content;
     }
 
     .serviceIcon {

@@ -34,6 +34,7 @@
     color: #003366;
     padding: 30px;
     display: flex;
+    width: 328px;
     justify-content: flex-end;flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
