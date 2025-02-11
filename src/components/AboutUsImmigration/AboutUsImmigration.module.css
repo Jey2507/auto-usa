@@ -1,13 +1,9 @@
-/* Основні стилі для секції "Про нас" */
-.aboutUsSection {
-    
+/* .aboutUsSection {
     margin: 0 auto;
     padding: 50px 20px;
     background-color: #003366;
-    /* Темно-синій фон */
     color: white;
-    /* Білий текст */
-    text-align: center;
+    width: 100%;
 }
 
 .title {
@@ -15,6 +11,7 @@
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .description {
@@ -25,16 +22,18 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 
 .missionSection {
     background-color: #ffffff;
-    /* Білий фон для місії */
     color: #003366;
-    /* Темно-синій колір для тексту */
     padding: 50px 20px;
     border-radius: 10px;
     margin-bottom: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .missionTitle {
@@ -47,6 +46,17 @@
     font-size: 18px;
     line-height: 1.6;
     color: #666666;
+    margin-bottom: 30px;
+}
+
+.missionSection ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.missionSection ul li {
+    font-size: 16px;
+    color: #003366;
 }
 
 .teamSection {
@@ -58,15 +68,18 @@
 
 .teamMember {
     background-color: #ffffff;
-    /* Білий фон для членів команди */
     color: #003366;
-    /* Темно-синій колір для тексту */
     padding: 30px;
     border-radius: 10px;
     width: 250px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.teamMember:hover {
+    transform: translateY(-10px);
 }
 
 .teamMember img {
@@ -92,84 +105,57 @@
 .ctaButton {
     padding: 15px 30px;
     background-color: #ff3333;
-    /* Червоний колір для кнопки */
     color: white;
     font-size: 18px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 30px;
 }
 
 .ctaButton:hover {
     background-color: #e60000;
-    /* Темніший червоний при наведенні */
 }
-
-/* Стилі для планшетів (від 768px до 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .title {
         font-size: 36px;
-        /* Зменшення заголовка на планшетах */
     }
 
     .description {
         font-size: 16px;
-        /* Зменшення шрифтів для опису */
     }
 
     .missionSection {
         max-width: 750px;
-        /* Місія займає максимум 750px на планшетах */
-        margin: 0 auto;
-        /* Центруємо блок */
     }
 
     .missionTitle {
         font-size: 32px;
-        /* Зменшення заголовка місії */
     }
 
     .missionDescription {
         font-size: 16px;
-        /* Зменшення шрифту опису місії */
     }
 
     .teamSection {
         flex-direction: column;
-        /* Одиночні блоки для планшетів */
         align-items: center;
-        /* Центруємо елементи */
-        margin-bottom: 40px;
     }
 
     .teamMember {
         width: 70%;
-        /* Картки команди будуть ширші на планшетах */
         margin: 20px 0;
-    }
-
-    .teamMemberName {
-        font-size: 20px;
-        /* Зменшення розміру імені */
-    }
-
-    .teamMemberRole {
-        font-size: 14px;
-        /* Зменшення розміру ролі */
     }
 
     .ctaButton {
         padding: 12px 25px;
-        /* Зменшення кнопки на планшетах */
     }
 }
 
-/* Стилі для мобільних пристроїв */
 @media (max-width: 768px) {
     .title {
         font-size: 30px;
-        /* Зменшення заголовка на мобільних */
     }
 
     .missionSection {
@@ -178,85 +164,204 @@
 
     .description {
         font-size: 14px;
-        /* Зменшення шрифтів для опису */
     }
 
     .teamSection {
         flex-direction: column;
-        /* Всі елементи в одну колонку */
         align-items: center;
     }
 
     .teamMember {
         width: 80%;
-        /* Зменшення ширини елементів */
         margin: 20px 0;
     }
 
     .ctaButton {
         padding: 12px 25px;
-        /* Зменшення кнопки на мобільних */
     }
 }
 
-/* Стилі для комп'ютерів (екрани більші за 1024px) */
 @media (min-width: 1024px) {
     .title {
         font-size: 48px;
-        /* Великі шрифти для заголовків на комп'ютерах */
     }
 
     .description {
         font-size: 18px;
-        /* Нормальний розмір шрифта для опису */
     }
 
     .missionSection {
         max-width: 800px;
-        /* Місія займає максимум 800px */
         margin: 0 auto;
-        /* Центруємо блок */
     }
 
     .missionTitle {
         font-size: 36px;
-        /* Заголовок місії великий */
     }
 
     .missionDescription {
         font-size: 18px;
-        /* Стандартний розмір тексту для опису місії */
     }
 
     .teamSection {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-bottom: 50px;
     }
 
     .teamMember {
         width: 250px;
-        /* Стандартна ширина карток членів команди */
-        margin: 10px;
-    }
-
-    .teamMemberName {
-        font-size: 22px;
-        /* Розмір імені членів команди */
-    }
-
-    .teamMemberRole {
-        font-size: 16px;
-        /* Розмір ролі */
     }
 
     .ctaButton {
         padding: 15px 30px;
-        /* Розмір кнопки для комп'ютерів */
-    }
-
-    .aboutUsSection{
-        width: 100%;
     }
 }
+
+.contactSection {
+    background-color: #f4f4f4;
+    color: #003366;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.contactTitle {
+    font-size: 48px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contactDescription {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #003366;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    border-color: #ff3333;
+    outline: none;
+}
+
+.contactForm textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submitButton {
+    padding: 15px 30px;
+    background-color: #ff3333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.submitButton:hover {
+    background-color: #e60000;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .contactTitle {
+        font-size: 36px;
+    }
+
+    .contactDescription {
+        font-size: 16px;
+    }
+
+    .contactForm {
+        padding: 20px;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactTitle {
+        font-size: 30px;
+    }
+
+    .contactDescription {
+        font-size: 14px;
+    }
+
+    .contactForm {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 14px;
+    }
+
+    .submitButton {
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contactTitle {
+        font-size: 48px;
+    }
+
+    .contactDescription {
+        font-size: 18px;
+    }
+
+    .contactForm {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .submitButton {
+        padding: 15px 30px;
+    }
+} */

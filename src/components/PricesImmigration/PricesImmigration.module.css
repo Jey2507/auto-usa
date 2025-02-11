@@ -1,8 +1,12 @@
 .pricingSection {
-    margin: 0 auto;
     padding: 50px 20px;
     background-color: #003366;
     color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textCenter {
     text-align: center;
 }
 
@@ -13,53 +17,62 @@
     margin-bottom: 30px;
 }
 
-.pricingGrid {
+.subtitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.gridContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .pricingCard {
     background-color: #ffffff;
     color: #003366;
     padding: 30px;
+    display: flex;
+    justify-content: flex-end;flex-direction: column;
     border-radius: 10px;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .pricingCard:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.planTitle {
-    font-size: 22px;
+.cardHeader {
+    margin-bottom: 20px;
+}
+
+.cardTitle {
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
-.planPrice {
+.cardPrice {
     font-size: 32px;
     color: #ff3333;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .featureList {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .featureItem {
     font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
+    color: #003366;
     margin-bottom: 10px;
 }
 
-.ctaButton {
+.selectButton {
     padding: 15px 30px;
     background-color: #ff3333;
     color: white;
@@ -70,52 +83,72 @@
     transition: background-color 0.3s ease;
 }
 
-.ctaButton:hover {
+.selectButton:hover {
     background-color: #e60000;
 }
 
-/* Адаптація для ноутбуків */
-@media (max-width: 1440px) {
-    .pricingGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Адаптація для планшетів */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
     .title {
         font-size: 36px;
     }
 
-    .pricingGrid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .pricingCard {
-        padding: 25px;
-    }
-}
-
-/* Адаптація для мобільних */
-@media (max-width: 768px) {
-    .title {
-        font-size: 30px;
-    }
-
-    .pricingGrid {
-        grid-template-columns: 1fr;
+    .subtitle {
+        font-size: 16px;
     }
 
     .pricingCard {
         padding: 20px;
     }
 
-    .planPrice {
+    .cardPrice {
         font-size: 28px;
     }
 
-    .ctaButton {
+    .selectButton {
         padding: 12px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .pricingCard {
+        padding: 15px;
+    }
+
+    .cardPrice {
+        font-size: 24px;
+    }
+
+    .selectButton {
+        padding: 12px 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .pricingCard {
+        padding: 30px;
+    }
+
+    .cardPrice {
+        font-size: 32px;
+    }
+
+    .selectButton {
+        padding: 15px 30px;
     }
 }

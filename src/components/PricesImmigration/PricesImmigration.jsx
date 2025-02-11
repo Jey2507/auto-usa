@@ -1,58 +1,52 @@
-import css from "./PricesImmigration.module.css";
+import css from './PricesImmigration.module.css';
 
-const pricingPlans = [
-    {
-        title: "Базовий план",
-        price: "1000$",
-        features: [
-            "Консультація спеціаліста",
-            "Огляд документів",
-            "Підготовка заявки",
-        ],
-    },
-    {
-        title: "Стандартний план",
-        price: "2500$",
-        features: [
-            "Консультація спеціаліста",
-            "Огляд документів",
-            "Підготовка та подання заявки",
-            "Юридичний супровід",
-        ],
-    },
-    {
-        title: "Преміум план",
-        price: "5000$",
-        features: [
-            "Персональний менеджер",
-            "Повний супровід на всіх етапах",
-            "Підготовка всіх документів",
-            "Юридичний супровід",
-            "Гарантія результату",
-        ],
-    },
-];
+const PricesImmigration = () => {
+    const pricingPlans = [
+        {
+            title: "Заполнение только формы на TPS (I-821)",
+            price: "$120", features: [],
+        }, {
+            title: "Заполнение только формы на рабочее разрешение (I-765)",
+            price: "$100", features: [],
+        }, {
+            title: "онлайн подача",
+            price: "$200",
+            features: ["Заполнение TPS ", "Разрешение на работу"],
+        },
+        {
+            title: "Печатная подача с формой Fee Waiver",
+            price: "$250",
+            features: ["Заполнение TPS ", "Разрешение на работу"],
 
-export default function PricesImmigration() {
+        },
+
+    ];
+
     return (
         <section className={css.pricingSection}>
-            <h2 className={css.title}>Ціни на імміграційні послуги</h2>
-            <div className={css.pricingGrid}>
+            <div className={css.textCenter}>
+                <h2 className={css.title}>Стоимость моих услуг по заполнению форм </h2>
+            </div>
+            <div className={css.gridContainer}>
                 {pricingPlans.map((plan, index) => (
                     <div key={index} className={css.pricingCard}>
-                        <h3 className={css.planTitle}>{plan.title}</h3>
-                        <p className={css.planPrice}>{plan.price}</p>
-                        <ul className={css.featureList}>
-                            {plan.features.map((feature, i) => (
-                                <li key={i} className={css.featureItem}>
-                                    {feature}
-                                </li>
-                            ))}
-                        </ul>
-                        <button className={css.ctaButton}>Обрати план</button>
+                        <div className={css.cardHeader}>
+                            <h3 className={css.cardTitle}>{plan.title}</h3>
+                        </div>
+                        <div className={css.cardContent}>
+                            <h3 className={css.cardPrice}>{plan.price}</h3>
+                            <ul className={css.featureList}>
+                                {plan.features.map((feature, idx) => (
+                                    <li key={idx} className={css.featureItem}>- {feature}</li>
+                                ))}
+                            </ul>
+                            <button className={css.selectButton}>Select Plan</button>
+                        </div>
                     </div>
                 ))}
             </div>
         </section>
     );
-}
+};
+
+export default PricesImmigration;

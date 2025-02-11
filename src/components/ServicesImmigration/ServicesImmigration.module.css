@@ -1,11 +1,8 @@
-/* Основні стилі для секції послуг імміграції */
 .immigrationServicesSection {
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 50px 46px;
     background-color: #003366;
-    /* Темно-синій фон */
     color: white;
-    /* Білий текст */
     text-align: center;
 }
 
@@ -14,6 +11,7 @@
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .description {
@@ -24,6 +22,32 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.consultationText {
+    font-size: 18px;
+    color: #003366;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+        margin-bottom: 60px;
+}
+
+.consultationText p {
+    margin-bottom: 20px;
+}
+
+.consultationText strong {
+    color: #ff3333;
+    font-weight: bold;
 }
 
 .servicesGrid {
@@ -34,47 +58,45 @@
 
 .serviceItem {
     background-color: #ffffff;
-    /* Білий фон для елементів послуг */
     color: #003366;
-    /* Темно-синій колір тексту */
     padding: 30px;
     border-radius: 10px;
+    width: 440px;height: 530px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition: transform 0.8s ease, box-shadow 0.8s ease, border 0.8s ease;
 }
 
 .serviceItem:hover {
-    transform: translateY(-10px);
-    /* Підняття елемента при наведенні */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Збільшення тіні при наведенні */
+    transform: scale(1.02);
+    box-shadow:  0 16px 32px rgba(238, 53, 53, 0.5);
+    border:  3px solid #e60000;
 }
 
 .serviceIcon {
     font-size: 48px;
     color: #ff3333;
-    /* Червоний колір для іконок */
     margin-bottom: 20px;
 }
 
 .serviceTitle {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: bold;
     color: #003366;
     margin-bottom: 10px;
 }
 
 .serviceDescription {
-    font-size: 16px;
+    font-size: 20px;
     color: #666666;
+    font: 500;
     line-height: 1.5;
 }
 
 .ctaButton {
     padding: 15px 30px;
     background-color: #ff3333;
-    /* Червоний колір для кнопки */
     color: white;
     font-size: 18px;
     border: none;
@@ -86,108 +108,133 @@
 
 .ctaButton:hover {
     background-color: #e60000;
-    /* Темніший червоний при наведенні */
 }
 
-/* Стилі для планшетів (від 768px до 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .title {
         font-size: 36px;
-        /* Зменшення заголовка на планшетах */
     }
 
     .description {
         font-size: 16px;
-        /* Зменшення розміру шрифту для опису */
+    }
+
+    .consultationText {
+        font-size: 16px;
+        padding: 20px;
     }
 
     .servicesGrid {
         grid-template-columns: repeat(2, 1fr);
-        /* Два стовпці для планшетів */
         gap: 30px;
     }
 
     .serviceItem {
         padding: 25px;
-        /* Зменшення відступів у елементах */
     }
 
     .serviceIcon {
         font-size: 42px;
-        /* Менші іконки для планшетів */
     }
 
     .ctaButton {
         padding: 14px 28px;
-        /* Зменшення кнопки на планшетах */
     }
 }
 
-/* Стилі для мобільних пристроїв (менше 768px) */
 @media (max-width: 768px) {
     .title {
         font-size: 30px;
-        /* Зменшення заголовка на мобільних */
     }
 
     .description {
         font-size: 14px;
-        /* Зменшення розміру шрифту для опису */
+    }
+
+    .consultationText {
+        font-size: 14px;
+        padding: 15px;
     }
 
     .servicesGrid {
         grid-template-columns: 1fr;
-        /* Одностовпцева версія для мобільних */
     }
 
     .serviceItem {
         padding: 20px;
-        /* Зменшення відступів у елементах */
+        width: 100%;
+        height: 400px;
     }
 
     .serviceIcon {
         font-size: 40px;
-        /* Менші іконки для мобільних */
     }
 
     .ctaButton {
         padding: 12px 25px;
-        /* Зменшення кнопки на мобільних */
     }
 }
 
-/* Стилі для ноутбуків (від 1024px до 1440px) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-    
-    
+@media (min-width: 1024px) and (max-width: 1540px) {
     .title {
         font-size: 42px;
-        /* Зменшення заголовка на ноутбуках */
     }
 
     .description {
         font-size: 17px;
-        /* Легке зменшення шрифту для опису */
+    }
+
+    .consultationText {
+        font-size: 16px;
+        padding: 25px;
     }
 
     .servicesGrid {
         grid-template-columns: repeat(3, 1fr);
-        /* Три стовпці для ноутбуків */
         gap: 35px;
     }
 
     .serviceItem {
-        padding: 28px;
-        /* Відступи в елементах послуг для ноутбуків */
+        padding: 18px;
     }
 
     .serviceIcon {
         font-size: 45px;
-        /* Іконки середнього розміру для ноутбуків */
     }
 
     .ctaButton {
         padding: 14px 28px;
-        /* Трохи менші кнопки для ноутбуків */
     }
+        .serviceDescription {
+            width: 367px;
+        }
+}
+
+.serviceDescription ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.serviceDescription li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.ctaButton {
+    padding: 15px 30px;
+    background-color: #ff3333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.ctaButton:hover {
+    background-color: #e60000;
 }
