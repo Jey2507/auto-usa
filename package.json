@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@shadcn/ui": "^0.0.4",
     "accordion-js": "^3.4.0",
     "accordionjs": "^2.1.2",
     "axios": "^1.6.8",
