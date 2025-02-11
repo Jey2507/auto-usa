@@ -1,12 +1,12 @@
 .container {
     width: 100%;
-    max-width: 420px;
+min-width: 420px;
     margin: 0 auto;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 780px;
+        min-width: 780px;
         width: 100%;
     }
 }
