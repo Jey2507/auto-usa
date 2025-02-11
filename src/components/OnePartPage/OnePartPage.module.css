@@ -1,0 +1,232 @@
+.tpsContainer {
+    width: 100%;
+    padding: 20px;
+    background: #003366;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image {
+    min-width: 280px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-top: 50px;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: rgb(216, 216, 216);
+    margin-bottom: 20px;
+    font-weight: 500;
+    border: 3px solid #730000;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #730000ab;
+}
+
+.boxQue h2 {
+    color: #fafafa;
+    text-align: center;
+}
+
+.boxQue p {
+    color: #e6e6e6;
+    font-size: 18px;
+    border-bottom: 2px solid #c9c9c9;
+    border-top: 2px solid #c9c9c9;
+    padding: 12px 0px;
+}
+
+.section {
+    background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sectionTitle {
+    font-size: 24px;
+    color: #1e3a8a;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sectionTitle::before {
+    content: '\1F4C4'; /* Іконка документа */
+    font-size: 28px;
+}
+
+.section ul {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.section ul li {
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btnTelegram {
+    background: #0088cc;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btnTelegram:hover {
+    background: #0077b3;
+    transform: scale(1.05);
+}
+
+.btnWhatsapp {
+    background: #25d366;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btnWhatsapp:hover {
+    background: #1da851;
+    transform: scale(1.05);
+}
+
+.sectionConfidential {
+    background: linear-gradient(145deg, #1e3a8a, #0f2c6d);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.documentImage {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Мобільна стилізація */
+@media screen and (min-width: 768px) {
+    .boxHero {
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .tpsContainer {
+        padding: 20px;
+        width: 100%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 16px;
+        width: 400px;
+        margin: 0;
+    }
+
+    .boxQue h2 {
+        margin-top: 32px;
+    }
+
+    .boxQue p {
+        padding: 12px;
+    }
+
+    .sectionTitle {
+        font-size: 20px;
+    }
+    .btnTelegram, .btnWhatsapp {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* Десктопна версія 1440px */
+@media screen and (min-width: 1440px) {
+    .tpsContainer {
+        padding: 40px;
+        margin-top: 0px;
+    }
+    .title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .boxQue {
+        width: 550px;
+        position: absolute;
+        bottom: -16px;
+    }
+
+    .boxQue h2 {
+
+    }
+    
+    .boxQue p {
+        
+    }
+
+    .subtitle {
+        font-size: 22px;
+        width: 550px;
+        height: max-content;
+        padding: 16px 20px;
+    }
+
+    .image {
+        max-width: 840px;
+    }
+
+    .boxHero {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+}
+
