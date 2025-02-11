@@ -1,4 +1,4 @@
-import AboutUsImmigration from "../../components/AboutUsImmigration/AboutUsImmigration";
+// import AboutUsImmigration from "../../components/AboutUsImmigration/AboutUsImmigration";
 import FaqImmigration from "../../components/FaqImmigration/FaqImmigration";
 import PricesImmigration from "../../components/PricesImmigration/PricesImmigration";
 
@@ -6,7 +6,8 @@ import ImmigrationServices from "../../components/ServicesImmigration/ServicesIm
 export default function ImmigrationPage() {
     return (
         <>
-            <AboutUsImmigration />
+            <OnePartPage />
+            {/* <AboutUsImmigration /> */}
             <ImmigrationServices />
             <PricesImmigration/>
             <FaqImmigration/>
