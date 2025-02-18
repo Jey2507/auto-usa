@@ -220,9 +220,11 @@
 .listTPS {
     padding: 12px 0;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     gap: 12px;
-    width: 385px;
+    width: 100%;
+    max-width: 385px;
 }
 
 .listTPS li {
