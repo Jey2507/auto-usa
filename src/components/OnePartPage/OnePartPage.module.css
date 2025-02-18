@@ -237,6 +237,45 @@
     align-items: center;
 }
 
+.listTPSTwo {
+    padding: 12px 0;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 385px;
+}
+
+.listTPSTwo li {
+    padding: 8px 12px;
+    border: 2px solid #0051a3;
+    border-radius: 6px;
+    color: rgba(245, 245, 245, 0.837);
+    background-color: #0051a3;
+    display: flex;gap: 12px;
+    align-items: center;
+}
+
+.descrHelp {
+    color: rgb(245, 245, 245);
+    background-color: #730000ab;
+    border: 3px solid #730000;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+}
+
+.textHthree {
+    color: rgba(255, 255, 255, 0.91);
+}
+
+.descrForm {
+    color: rgba(255, 255, 255, 0.812);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.812);
+    padding-bottom: 20px;
+}
+
 /* Мобільна стилізація */
 @media screen and (min-width: 768px) {
     .boxHero {
@@ -292,6 +331,11 @@
     }
     
     .listTPS {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .listTPSTwo {
         max-width: 800px;
         width: 100%;
     }
@@ -366,6 +410,26 @@
         flex-wrap: wrap;
         gap: 12px;
     }
+
+    .listTPSTwo {
+        padding: 24px 0px 0 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0;
+        justify-content: center;
+        max-width: none;
+    }
+
+    .listTPSTwo li {
+        padding: 8px 16px;
+        display: flex;
+        width: 260px;
+        gap: 14px;
+        align-items: center;
+    }
+
     
     .listTPS li {
         padding: 8px 16px;
@@ -373,6 +437,16 @@
         width: 308px;
         gap: 14px;
         align-items: center;
+    }
+
+    .textHthree {
+        margin-top: 40px;
+    }
+    
+    .descrForm {
+        color: rgba(255, 255, 255, 0.812);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.812);
+        padding-bottom: 20px;
     }
 
 }

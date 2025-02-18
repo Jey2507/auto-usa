@@ -2,7 +2,7 @@ import styles from "../OnePartPage/OnePartPage.module.css";
 // import { FaPassport, FaClipboardList, FaPhone } from "react-icons/fa";
 // import tpsImage from "../assets/tps-image.jpg";
 import immigration from "../../assets/images/immigration.jpg"
-import { FaPassport, FaIdCard, FaUserShield, FaBriefcase, FaPlane, FaHome, FaPhone, FaEnvelope, FaCity, FaUserFriends, FaGlobe, FaBalanceScale, FaExclamationTriangle } from "react-icons/fa";
+import { FaPassport, FaIdCard, FaUserShield, FaBriefcase, FaPlane, FaHome, FaPhone, FaEnvelope, FaCity, FaUserFriends, FaGlobe, FaBalanceScale, FaExclamationTriangle, FaCamera } from "react-icons/fa";
 
 const OnePartPage = () => {
   return (
@@ -64,12 +64,12 @@ const OnePartPage = () => {
             </ul>
         </div>
       </div>
-      {/* <div>
-        <h3>Заявка на Рабочее Разрешение (Форма I-765)</h3>
-        <p>Форма I-765 – это заявление на получение разрешения на работу в США. Подавать его могут украинцы, получающие статус TPS, находящиеся под программой Uniting for Ukraine (U4U), либо имеющие право на трудоустройство по другим основаниям.</p>
+      <div>
+        <h3 className={styles.textHthree}>Заявка на Рабочее Разрешение (Форма I-765)</h3>
+        <p className={styles.descrForm}>Форма I-765 – это заявление на получение разрешения на работу в США. Подавать его могут украинцы, получающие статус TPS, находящиеся под программой Uniting for Ukraine (U4U), либо имеющие право на трудоустройство по другим основаниям.</p>
         <h3 className={styles.textTPS}>Документы для подачи I-765:</h3>
         <p className={styles.descrTPS}>Для подачи заявления на разрешение на работу необходимо предоставить:</p>
-        <ul className={styles.listTPS}>
+        <ul className={styles.listTPSTwo}>
           <li><FaPassport /> Заграничный паспорт (все страницы)</li>
           <li><FaPlane /> Форма I-94 (подтверждение въезда в США)</li>
           <li><FaBriefcase /> Разрешение на работу (если есть, обе стороны карты)</li>
@@ -82,8 +82,8 @@ const OnePartPage = () => {
           <li><FaUserFriends /> Семейное положение</li>
           <li><FaCity /> Город и страна рождения</li>
         </ul>
-        <p>Я помогаю в правильном заполнении этих форм, чтобы вы смогли успешно подать документы и получить одобрение</p>
-      </div> */}
+        <p className={styles.descrHelp}>Я помогаю в правильном заполнении этих форм, чтобы вы смогли успешно подать документы и получить одобрение</p>
+      </div>
 
       {/* <div className={styles.section}>
         <h2 className={styles.sectionTitle}>Temporary Protected Status (TPS) для украинцев</h2>
