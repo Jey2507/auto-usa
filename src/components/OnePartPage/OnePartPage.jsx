@@ -2,6 +2,7 @@ import styles from "../OnePartPage/OnePartPage.module.css";
 // import { FaPassport, FaClipboardList, FaPhone } from "react-icons/fa";
 // import tpsImage from "../assets/tps-image.jpg";
 import immigration from "../../assets/images/immigration.jpg"
+import { FaPassport, FaIdCard, FaUserShield, FaBriefcase, FaPlane, FaHome, FaPhone, FaEnvelope, FaCity, FaUserFriends, FaGlobe, FaBalanceScale, FaExclamationTriangle } from "react-icons/fa";
 
 const OnePartPage = () => {
   return (
@@ -20,46 +21,48 @@ const OnePartPage = () => {
           </p>
         </div>
       </div>
-      <div className={styles.bigBox}>
-          <h2 className={styles.texttwo}>Даты подачи заявлений на TPS</h2>
-          <ul>
-            <li>✅ Первоначальная подача TPS (для тех, кто подаёт впервые) – до 19 апреля 2025 года.</li>
-            <li>✅ Переподача и продление TPS (для тех, у кого статус уже есть) – до 18 марта 2025 года.</li>
-          </ul>
-          <br/>
-          <p className={styles.descr}>Подача TPS:<br/>Электронно или в печатном виде</p>
-          <p className={styles.descrQue}>Вы можете подать заявление на TPS и рабочее разрешение двумя способами:</p>
-          <div className={styles.boxTwo}>
-            <h3>1.Электронная подача (Online Filing) – Платная</h3>
+      <div className={styles.boxFlex}>
+        <div className={styles.bigBox}>
+            <h2 className={styles.texttwo}>Даты подачи заявлений на TPS</h2>
             <ul>
-              <li>❇️ Первоначальная подача TPS + разрешение на работу – $510</li>
-              <li>❇️ Продление TPS + разрешение на работу – $500</li>
+              <li>✅ Первоначальная подача TPS (для тех, кто подаёт впервые) – до 19 апреля 2025 года.</li>
+              <li>✅ Переподача и продление TPS (для тех, у кого статус уже есть) – до 18 марта 2025 года.</li>
             </ul>
-            <h3>2.Подача в печатном виде (Paper Filing) – Возможность подачи бесплатно</h3>
-            <ul>
-              <li>❇️ Если у вас есть государственная социальная помощь, медицинская страховка Medicaid или вы безработны, вы можете подать заявку бесплатно.</li>
-              <li>❇️ Для этого необходимо заполнить форму I-912 (Fee Waiver), которая освобождает от уплаты всех сборов.</li>
+            <br/>
+            <p className={styles.descr}>Подача TPS:<br/>Электронно или в печатном виде</p>
+            <p className={styles.descrQue}>Вы можете подать заявление на TPS и рабочее разрешение двумя способами:</p>
+            <div className={styles.boxTwo}>
+              <h3>1.Электронная подача (Online Filing) – Платная</h3>
+              <ul>
+                <li>❇️ Первоначальная подача TPS + разрешение на работу – $510</li>
+                <li>❇️ Продление TPS + разрешение на работу – $500</li>
+              </ul>
+              <h3>2.Подача в печатном виде (Paper Filing) – Возможность подачи бесплатно</h3>
+              <ul>
+                <li>❇️ Если у вас есть государственная социальная помощь, медицинская страховка Medicaid или вы безработны, вы можете подать заявку бесплатно.</li>
+                <li>❇️ Для этого необходимо заполнить форму I-912 (Fee Waiver), которая освобождает от уплаты всех сборов.</li>
+              </ul>
+            </div>
+        </div>
+        <div className={styles.boxTPS}>
+            <h3 className={styles.textTPS}>Документы для подачи заявки на TPS (Форма I-821)</h3>
+            <p className={styles.descrTPS}>Для оформления TPS необходимо предоставить:</p>
+            <ul className={styles.listTPS}>
+              <li><FaPassport /> Заграничный паспорт <br/>(все страницы, включая пустые)</li>
+              <li><FaIdCard /> ID (американское удостоверение личности) с двух сторон</li>
+              <li><FaUserShield /> Social Security Number (SSN) (если есть)</li>
+              <li><FaBriefcase /> Разрешение на работу <br/>(если есть, обе стороны карты)</li>
+              <li><FaPlane /> Форма I-94 <br/>(подтверждение въезда в США)</li>
+              <li><FaHome /> Адрес проживания в США</li>
+              <li><FaPhone /> Номер телефона</li>
+              <li><FaEnvelope /> Email</li>
+              <li><FaCity /> Город рождения</li>
+              <li><FaUserFriends /> Семейное положение</li>
+              <li><FaGlobe /> Список стран, в которые вы путешествовали</li>
+              <li><FaBalanceScale /> Находитесь ли вы в иммиграционном процессе в США</li>
+              <li><FaExclamationTriangle /> Были ли у вас проблемы с законом (аресты, судимости и т. д.)</li>
             </ul>
-          </div>
-      </div>
-      <div>
-          <h3>Документы для подачи заявки на TPS (Форма I-821)</h3>
-          <p>Для оформления TPS необходимо предоставить:</p>
-          <ul>
-            <li>Заграничный паспорт (все страницы, включая пустые)</li>
-            <li>ID (американское удостоверение личности) с двух сторон</li>
-            <li>Social Security Number (SSN) (если есть)</li>
-            <li>Разрешение на работу (если есть, обе стороны карты)</li>
-            <li>Форма I-94 (подтверждение въезда в США)</li>
-            <li>Адрес проживания в США</li>
-            <li>Номер телефона</li>
-            <li>Email</li>
-            <li>Город рождения</li>
-            <li>Семейное положение</li>
-            <li>Список стран, в которые вы путешествовали (с датами въезда/выезда и указанием иммиграционного статуса в этих странах)</li>
-            <li>Находитесь ли вы в иммиграционном процессе в США</li>
-            <li>Были ли у вас проблемы с законом (аресты, судимости и т. д.)</li>
-          </ul>
+        </div>
       </div>
       <div>
         <h3>Заявка на Рабочее Разрешение (Форма I-765)</h3>
