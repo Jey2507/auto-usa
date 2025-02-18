@@ -33,6 +33,66 @@
     background-color: #730000ab;
 }
 
+.bigBox {
+    background-color: #f8ede3; 
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texttwo {
+    color: #003366; 
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 16px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.descr {
+    color: #131313;
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px dashed red;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.boxTwo h3 {
+    color: #003366; 
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    padding: 16px 0px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.boxTwo ul li {
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+.boxTwo ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.bigBox ul li {
+    display: block;
+    margin-top: 10px;
+}
+
 .boxQue h2 {
     color: #fafafa;
     text-align: center;
@@ -142,6 +202,41 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+.boxTPS {
+    margin-top: 20px;
+}
+
+.textTPS {
+    color: whitesmoke;
+    margin-bottom: 8px;
+}
+
+.descrTPS {
+    color: rgba(245, 245, 245, 0.849);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.listTPS {
+    padding: 12px 0;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 385px;
+}
+
+.listTPS li {
+    padding: 8px 12px;
+    border: 2px solid #0051a3;
+    border-radius: 6px;
+    color: rgba(245, 245, 245, 0.837);
+    background-color: #0051a3;
+    display: flex;gap: 12px;
+    align-items: center;
+}
+
 /* Мобільна стилізація */
 @media screen and (min-width: 768px) {
     .boxHero {
@@ -179,6 +274,27 @@
         font-size: 14px;
         padding: 8px 12px;
     }
+
+    .bigBox {
+        max-width: none;
+    }
+
+    .boxTPS {
+        margin-top: 32px;
+    }
+    
+    .textTPS {
+        font-size: 22px;
+    }
+    
+    .descrTPS {
+        font-size: 18px;
+    }
+    
+    .listTPS {
+        max-width: 800px;
+        width: 100%;
+    }
 }
 
 /* Десктопна версія 1440px */
@@ -191,7 +307,7 @@
         font-size: 36px;
         padding-top: 0;
         margin-top: 0;
-        margin-bottom: 32px;
+        margin-bottom: 44px;
     }
 
     .header {
@@ -204,12 +320,9 @@
         bottom: -16px;
     }
 
-    .boxQue h2 {
-
-    }
-    
-    .boxQue p {
-        
+    .bigBox {
+        max-width: 700px;
+        margin: 60px 0 0 0;
     }
 
     .subtitle {
@@ -223,9 +336,43 @@
         max-width: 840px;
     }
 
+    .boxFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .boxHero {
         gap: 0;
         justify-content: space-between;
+    }
+
+    .boxTPS {
+        max-width: 700px;
+        margin-top: 60px;
+        padding: 16px 24px;
+        border: 2px dashed whitesmoke;
+        border-radius: 6px;
+    }
+    
+    .textTPS {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    
+    .listTPS {
+        padding: 24px 8px 0 8px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    .listTPS li {
+        padding: 8px 16px;
+        display: flex;
+        width: 308px;
+        gap: 14px;
+        align-items: center;
     }
 
 }
