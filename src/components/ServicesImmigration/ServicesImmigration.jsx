@@ -1,7 +1,9 @@
-import styles from './ServicesImmigration.module.css';
+import { useEffect, useState, useRef } from "react";
+import styles from "./ServicesImmigration.module.css";
+
 
 const services = [
-    
+
     {
         icon: '📋',
         title: 'Імміграційний статус і легалізація',
@@ -120,33 +122,56 @@ const services = [
         )
     }
 ];
+
+
 const ServicesImmigration = () => {
+    const [heights, setHeights] = useState([]);
+    const cardRefs = useRef([]);
+
+    useEffect(() => {
+        const updateHeights = () => {
+            if (cardRefs.current.length > 0) {
+                const newHeights = [];
+                const screenWidth = window.innerWidth;
+                const itemsPerRow = screenWidth >= 1024 ? 3 : 2;
+
+                for (let i = 0; i < cardRefs.current.length; i += itemsPerRow) {
+                    const rowHeights = cardRefs.current
+                        .slice(i, i + itemsPerRow)
+                        .map(ref => ref?.offsetHeight || 0);
+                    const maxHeight = Math.max(...rowHeights);
+
+                    for (let j = 0; j < itemsPerRow; j++) {
+                        if (i + j < cardRefs.current.length) {
+                            newHeights[i + j] = maxHeight;
+                        }
+                    }
+                }
+                setHeights(newHeights);
+            }
+        };
+        updateHeights();
+        window.addEventListener("resize", updateHeights);
+        return () => window.removeEventListener("resize", updateHeights);
+    }, [services.length]);
+
     return (
         <section className={styles.immigrationServicesSection}>
             <h1 className={styles.title}>Наші послуги імміграції</h1>
-            
             <div className={styles.consultationText}>
-                <p>
-                    Консультація по імміграційному статусу, адаптації, бізнесу і життю в США
-                </p>
-                <p>
-                    Якщо ви вже находитесь в США або тільки плануєте переїзд, важливо знати можливості легалізації, адаптації, фінансової стабільності, бізнесу і навіть подорожей. Я проводжу консультації, де розповідаю, які шляхи легалізації існують, як адаптуватися в США, влаштувати своє фінансове життя, відкрити бізнес і які можливості доступні для комфортного життя.
-                </p>
-                <p>
-                    Важливо!<br />
-                    Я не є адвокатом і не даю юридичних консультацій.<br />
-                    Я – спеціаліст, який допомагає українцям приїхати в США, адаптуватися, отримати легальні документи, такі як Social Security, дозвіл на роботу, статус TPS, а також розібратися у варіантах легалізації, фінансових питаннях, бізнесі, житлі та подорожах.
-                </p>
-                <p>
-                    Які питання я допоможу розібрати на консультації?
-                </p>
+                <p>Консультація з імміграції, адаптації та фінансів у США</p>
             </div>
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => (
-                    <div key={index} className={styles.serviceItem}>
+                    <div
+                        key={index}
+                        className={styles.serviceItem}
+                        ref={(el) => (cardRefs.current[index] = el)}
+                        style={{ height: heights[index] || "auto" }}
+                    >
                         <div className={styles.serviceIcon}>{service.icon}</div>
                         <h3 className={styles.serviceTitle}>{service.title}</h3>
-                        <div className={styles.serviceDescription}>{service.description}</div>
+                        <p className={styles.serviceDescription}>{service.description}</p>
                     </div>
                 ))}
             </div>
@@ -154,6 +179,5 @@ const ServicesImmigration = () => {
         </section>
     );
 };
-
 
 export default ServicesImmigration;

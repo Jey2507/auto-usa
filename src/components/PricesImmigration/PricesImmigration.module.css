@@ -4,6 +4,7 @@
     color: white;
     width: 100%;
     box-sizing: border-box;
+   
 }
 
 .textCenter {
@@ -35,7 +36,8 @@
     padding: 30px;
     display: flex;
     width: 328px;
-    justify-content: flex-end;flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -53,12 +55,12 @@
 .cardTitle {
     font-size: 24px;
     font-weight: bold;
+margin: 0;
 }
 
 .cardPrice {
     font-size: 32px;
     color: #ff3333;
-    margin: 20px 0;
 }
 
 .featureList {
@@ -111,6 +113,11 @@
 }
 
 @media (max-width: 768px) {
+    .pricingSection{
+         display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
     .title {
         font-size: 30px;
     }

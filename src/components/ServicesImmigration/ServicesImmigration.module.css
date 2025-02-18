@@ -61,7 +61,8 @@
     color: #003366;
     padding: 30px;
     border-radius: 10px;
-    width: 440px;height: 530px;
+    width: 400px;
+    /* height: 520px; */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -69,7 +70,6 @@
 }
 
 .serviceItem:hover {
-    transform: scale(1.02);
     box-shadow:  0 16px 32px rgba(238, 53, 53, 0.5);
     border:  3px solid #e60000;
 }
@@ -131,11 +131,12 @@
 
     .serviceItem {
         padding: 25px;
-        width: 100%;height: 400px;
+        width: 100%;
+        /* height: 640px; */
     }
 
     .serviceIcon {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .ctaButton {
@@ -163,7 +164,8 @@
 
     .serviceItem {
         padding: 20px;
-        width: 100%;height: max-content;
+        width: 100%;
+        height: max-content;
     }
 
     .serviceIcon {
