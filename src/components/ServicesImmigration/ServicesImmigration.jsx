@@ -158,9 +158,9 @@ const ServicesImmigration = () => {
     return (
         <section className={styles.immigrationServicesSection}>
             <h1 className={styles.title}>Наші послуги імміграції</h1>
-            <div className={styles.consultationText}>
+            {/* <div className={styles.consultationText}>
                 <p>Консультація з імміграції, адаптації та фінансів у США</p>
-            </div>
+            </div> */}
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => (
                     <div
