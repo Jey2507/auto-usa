@@ -6,7 +6,6 @@ import ImmigrationServices from "../../components/ServicesImmigration/ServicesIm
 export default function ImmigrationPage() {
     return (
         <>
-            <OnePartPage />
             {/* <AboutUsImmigration /> */}
             <ImmigrationServices />
             <PricesImmigration/>

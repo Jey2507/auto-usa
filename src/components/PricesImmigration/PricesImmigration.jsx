@@ -9,7 +9,7 @@ const PricesImmigration = () => {
             title: "Заполнение только формы на рабочее разрешение (I-765)",
             price: "$100", features: [],
         }, {
-            title: "онлайн подача",
+            title: "Онлайн подача",
             price: "$200",
             features: ["Заполнение TPS ", "Разрешение на работу"],
         },
@@ -34,14 +34,17 @@ const PricesImmigration = () => {
                             <h3 className={css.cardTitle}>{plan.title}</h3>
                         </div>
                         <div className={css.cardContent}>
-                            <h3 className={css.cardPrice}>{plan.price}</h3>
                             <ul className={css.featureList}>
                                 {plan.features.map((feature, idx) => (
                                     <li key={idx} className={css.featureItem}>- {feature}</li>
                                 ))}
                             </ul>
-                            <button className={css.selectButton}>Select Plan</button>
+                            <h3 className={css.cardPrice}>{plan.price}</h3>
+
+                           
                         </div>
+
+                        <button className={css.selectButton}>Select Plan</button>
                     </div>
                 ))}
             </div>
