@@ -25,11 +25,14 @@
 }
 
 .gridContainer {
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    justify-items: center;
+    row-gap: 32px;
 }
-
+.gridContainer>div:last-child {
+    margin-right: 0;
+}
 .pricingCard {
     background-color: #ffffff;
     color: #003366;
@@ -90,6 +93,7 @@ margin: 0;
     background-color: #e60000;
 }
 
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .title {
         font-size: 36px;
@@ -112,7 +116,7 @@ margin: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .pricingSection{
          display: flex;
     flex-direction: column;
@@ -128,6 +132,7 @@ margin: 0;
 
     .pricingCard {
         padding: 15px;
+
     }
 
     .cardPrice {
@@ -150,6 +155,9 @@ margin: 0;
 
     .pricingCard {
         padding: 30px;
+        display: flex;
+            flex-direction: column;
+            justify-content: space-between;
     }
 
     .cardPrice {

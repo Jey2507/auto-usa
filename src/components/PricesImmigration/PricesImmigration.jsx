@@ -30,6 +30,7 @@ const PricesImmigration = () => {
             <div className={css.gridContainer}>
                 {pricingPlans.map((plan, index) => (
                     <div key={index} className={css.pricingCard}>
+                       
                         <div className={css.cardHeader}>
                             <h3 className={css.cardTitle}>{plan.title}</h3>
                         </div>
@@ -39,12 +40,15 @@ const PricesImmigration = () => {
                                     <li key={idx} className={css.featureItem}>- {feature}</li>
                                 ))}
                             </ul>
-                            <h3 className={css.cardPrice}>{plan.price}</h3>
+                            
 
                            
                         </div>
-
+                        <div className={css.containerPrice}>
+ 
+                        <h3 className={css.cardPrice}>{plan.price}</h3>
                         <button className={css.selectButton}>Select Plan</button>
+                        </div>
                     </div>
                 ))}
             </div>
