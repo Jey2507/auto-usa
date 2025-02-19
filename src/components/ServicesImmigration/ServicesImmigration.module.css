@@ -227,7 +227,7 @@
 
 .ctaButton {
     padding: 15px 30px;
-    background-color: #ff3333;
+    background-color:  #9e0000;
     color: white;
     font-size: 18px;
     border: none;
@@ -238,5 +238,5 @@
 }
 
 .ctaButton:hover {
-    background-color: #e60000;
+    background-color: #9e0000ba;
 }

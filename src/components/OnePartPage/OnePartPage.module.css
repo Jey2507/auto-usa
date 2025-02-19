@@ -34,7 +34,7 @@
 }
 
 .bigBox {
-    background-color: #f8ede3; 
+    background-color: #f8ede3ed; 
     padding: 20px;
     max-width: 600px;
     margin: auto;
@@ -264,6 +264,7 @@
     border-radius: 10px;
     padding: 12px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .textHthree {
@@ -274,6 +275,23 @@
     color: rgba(255, 255, 255, 0.812);
     border-bottom: 2px solid rgba(255, 255, 255, 0.812);
     padding-bottom: 20px;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #9e0000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 60px;
+}
+
+.ctaButton:hover {
+    background-color: #9e0000ba;
 }
 
 /* Мобільна стилізація */
@@ -338,6 +356,10 @@
     .listTPSTwo {
         max-width: 800px;
         width: 100%;
+    }
+
+    .ctaButton {
+        padding: 12px 25px;
     }
 }
 
@@ -412,20 +434,21 @@
     }
 
     .listTPSTwo {
-        padding: 24px 0px 0 0px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 12px;
         margin: 0;
-        justify-content: center;
-        max-width: none;
+        max-width: 700px;
+        padding: 32px 24px 32px 32px;
+        border: 2px dashed whitesmoke;
+        border-radius: 6px;
     }
 
     .listTPSTwo li {
         padding: 8px 16px;
         display: flex;
-        width: 260px;
+        width: 308px;
         gap: 14px;
         align-items: center;
     }
@@ -442,12 +465,41 @@
     .textHthree {
         margin-top: 40px;
     }
+
+    .descrHelp {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .descrTPS {
+        color: whitesmoke;
+    }
     
     .descrForm {
         color: rgba(255, 255, 255, 0.812);
         border-bottom: 2px solid rgba(255, 255, 255, 0.812);
         padding-bottom: 20px;
+        margin-bottom: 40px;
     }
 
-}
+    .divDoc {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .textContainer {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(90deg,rgb(248, 237, 227, 0.0), rgb(248, 237, 227, 0.35),rgb(248, 237, 227, 0.0));
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+    
+    .ctaButton {
+        padding: 14px 28px;
+    }
+}

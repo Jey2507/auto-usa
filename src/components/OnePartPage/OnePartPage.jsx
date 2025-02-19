@@ -67,22 +67,29 @@ const OnePartPage = () => {
       <div>
         <h3 className={styles.textHthree}>Заявка на Рабочее Разрешение (Форма I-765)</h3>
         <p className={styles.descrForm}>Форма I-765 – это заявление на получение разрешения на работу в США. Подавать его могут украинцы, получающие статус TPS, находящиеся под программой Uniting for Ukraine (U4U), либо имеющие право на трудоустройство по другим основаниям.</p>
-        <h3 className={styles.textTPS}>Документы для подачи I-765:</h3>
-        <p className={styles.descrTPS}>Для подачи заявления на разрешение на работу необходимо предоставить:</p>
-        <ul className={styles.listTPSTwo}>
-          <li><FaPassport /> Заграничный паспорт (все страницы)</li>
-          <li><FaPlane /> Форма I-94 (подтверждение въезда в США)</li>
-          <li><FaBriefcase /> Разрешение на работу (если есть, обе стороны карты)</li>
-          <li><FaIdCard /> ID (американское удостоверение личности) с двух сторон</li>
-          <li><FaUserShield /> Social Security Number (SSN) (если есть)</li>
-          <li><FaCamera /> Фотография 2х2 (электронный или печатный формат)</li>
-          <li><FaHome /> Адрес проживания в США</li>
-          <li><FaPhone /> Номер телефона</li>
-          <li><FaEnvelope /> Email</li>
-          <li><FaUserFriends /> Семейное положение</li>
-          <li><FaCity /> Город и страна рождения</li>
-        </ul>
+        <div className={styles.divDoc}>
+          <div className={styles.textContainer}>
+            <h3 className={styles.textTPS}>Документы для подачи I-765</h3>
+            <p className={styles.descrTPS}>Для подачи заявления на разрешение на работу необходимо предоставить:</p>
+          </div>
+          <ul className={styles.listTPSTwo}>
+            <li><FaPassport /> Заграничный паспорт (все страницы)</li>
+            <li><FaPlane /> Форма I-94 (подтверждение въезда в США)</li>
+            <li><FaBriefcase /> Разрешение на работу (если есть, обе стороны карты)</li>
+            <li><FaIdCard /> ID (американское удостоверение личности) с двух сторон</li>
+            <li><FaUserShield /> Social Security Number (SSN) (если есть)</li>
+            <li><FaCamera /> Фотография 2х2 (электронный или печатный формат)</li>
+            <li><FaHome /> Адрес проживания в США</li>
+            <li><FaPhone /> Номер телефона</li>
+            <li><FaEnvelope /> Email</li>
+            <li><FaUserFriends /> Семейное положение</li>
+            <li><FaCity /> Город и страна рождения</li>
+          </ul>
+        </div>
+        
         <p className={styles.descrHelp}>Я помогаю в правильном заполнении этих форм, чтобы вы смогли успешно подать документы и получить одобрение</p>
+        
+        <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Дізнатись більше</a>
       </div>
 
       {/* <div className={styles.section}>

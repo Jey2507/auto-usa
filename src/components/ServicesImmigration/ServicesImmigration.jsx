@@ -175,9 +175,9 @@ const ServicesImmigration = () => {
                     </div>
                 ))}
             </div>
-            <button className={styles.ctaButton}>Дізнатись більше</button>
+            <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Дізнатись більше</a>
         </section>
     );
-};
+}
 
 export default ServicesImmigration;
