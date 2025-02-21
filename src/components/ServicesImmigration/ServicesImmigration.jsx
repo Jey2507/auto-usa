@@ -175,7 +175,9 @@ const ServicesImmigration = () => {
                     </div>
                 ))}
             </div>
-            <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Дізнатись більше</a>
+            <div className={styles.centerBox}>
+                <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Подробнее</a>
+            </div>
         </section>
     );
 }

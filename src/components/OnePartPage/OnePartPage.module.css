@@ -1,7 +1,7 @@
 .tpsContainer {
     width: 100%;
     padding: 20px;
-    background: #003366;
+    background: #000000;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -12,45 +12,76 @@
     border-radius: 8px;
 }
 
+.fon {
+    background: 
+    linear-gradient( #00000000, #00000048,#000000), 
+    url("../../assets/images/fon.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 700px;
+    max-width: 460px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .title {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding-top: 50px;
+    text-align: center;
 }
 
 .subtitle {
-    font-size: 20px;
-    color: rgb(216, 216, 216);
+    margin-top: -240px;
+    z-index: 5;
+    font-size: 16px;
+    color: rgb(247, 247, 247);
     margin-bottom: 20px;
     font-weight: 500;
-    border: 3px solid #730000;
+    border: 1px solid #D12C44;
     padding: 12px;
-    border-radius: 10px;
-    background-color: #730000ab;
+    border-radius: 6px;
+    background-color: #333333a3;
+    text-align: center;
+    font-size: 600;
+    width: 100%;
+    max-width: 340px;
+}
+
+.spanColor {
+    color: #D12C44;
+}
+
+.spanFont {
+    font-weight: 600;
 }
 
 .bigBox {
-    background-color: #f8ede3ed; 
+    background-color: #ffffffe6; 
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 30px;
     margin-top: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .texttwo {
-    color: #003366; 
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 16px;
-    margin: 0;
-    font-weight: 600;
-    font-size: 20px;
+    color: #D12C44; 
+    padding-bottom: 4px;
+    margin: 0 auto;
+    width: 260px;
+    font-weight: 500;
+    font-size: 24px;
     text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 .descr {
@@ -65,12 +96,11 @@
 
 
 .boxTwo h3 {
-    color: #003366; 
-    border-bottom: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    padding: 16px 0px;
-    margin: 0;
-    font-weight: 600;
+    color: #D12C44; 
+    font-family: "Montserrat", sans-serif;
+    width: 250px;
+    margin: 0 auto;
+    font-weight: 400;
     font-size: 18px;
     text-align: center;
     margin-bottom: 12px;
@@ -78,7 +108,8 @@
 
 .boxTwo ul li {
     padding-left: 8px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .boxTwo ul {
@@ -101,8 +132,6 @@
 .boxQue p {
     color: #e6e6e6;
     font-size: 18px;
-    border-bottom: 2px solid #c9c9c9;
-    border-top: 2px solid #c9c9c9;
     padding: 12px 0px;
 }
 
@@ -209,6 +238,9 @@
 .textTPS {
     color: whitesmoke;
     margin-bottom: 8px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .descrTPS {
@@ -229,10 +261,10 @@
 
 .listTPS li {
     padding: 8px 12px;
-    border: 2px solid #0051a3;
-    border-radius: 6px;
-    color: rgba(245, 245, 245, 0.837);
-    background-color: #0051a3;
+    border: 1px solid #D12C44;
+    border-radius: 16px;
+    color: rgba(245, 245, 245, 0.936);
+    background-color: #33333369;
     display: flex;gap: 12px;
     align-items: center;
 }
@@ -249,10 +281,10 @@
 
 .listTPSTwo li {
     padding: 8px 12px;
-    border: 2px solid #0051a3;
+    border: 1px solid #D12C44;
     border-radius: 6px;
     color: rgba(245, 245, 245, 0.837);
-    background-color: #0051a3;
+    background-color: #33333369;
     display: flex;gap: 12px;
     align-items: center;
 }
@@ -260,41 +292,57 @@
 .descrHelp {
     color: rgb(245, 245, 245);
     background-color: #730000ab;
-    border: 3px solid #730000;
+    border: 1px solid #D12C44;
     border-radius: 10px;
     padding: 12px;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .textHthree {
     color: rgba(255, 255, 255, 0.91);
+    width: 290px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
 }
 
 .descrForm {
-    color: rgba(255, 255, 255, 0.812);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.812);
+    color: rgba(255, 255, 255, 0.886);
+    border-bottom: 1px solid #D12C44;
     padding-bottom: 20px;
+}
+
+.centerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .ctaButton {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #9e0000;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     color: white;
-    font-size: 18px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #333 0%, #d22 100%);
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 60px;
+    transition: all 0.3s ease;
 }
 
 .ctaButton:hover {
-    background-color: #9e0000ba;
+    background: linear-gradient(to bottom, #444 0%, #e33 100%);
 }
 
-/* Мобільна стилізація */
+
 @media screen and (min-width: 768px) {
     .boxHero {
         display: flex;

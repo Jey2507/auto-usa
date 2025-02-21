@@ -1,7 +1,7 @@
 .immigrationServicesSection {
     margin: 0 auto;
     padding: 50px 20px;
-    background-color: #003366;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
@@ -28,7 +28,7 @@
 
 .consultationText {
     font-size: 18px;
-    color: #003366;
+    color: #D12C44;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +58,7 @@
 
 .serviceItem {
     background-color: #ffffff;
-    color: #003366;
+    color: #D12C44;
     padding: 30px;
     border-radius: 10px;
     width: 400px;
@@ -83,7 +83,7 @@
 .serviceTitle {
     font-size: 26px;
     font-weight: bold;
-    color: #003366;
+    color: #D12C44;
     margin-bottom: 10px;
 }
 
@@ -94,21 +94,34 @@
     line-height: 1.5;
 }
 
+.centerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .ctaButton {
+    display: inline-block;
     padding: 15px 30px;
-    background-color: #ff3333;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     color: white;
-    font-size: 18px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #333 0%, #d22 100%);
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 50px;
+    transition: all 0.3s ease;
 }
 
 .ctaButton:hover {
-    background-color: #e60000;
+    background: linear-gradient(to bottom, #444 0%, #e33 100%);
 }
+
 
 @media  (min-width: 768px) and (max-width:1439px) {
     .title {

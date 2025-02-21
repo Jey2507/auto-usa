@@ -1,6 +1,6 @@
 .pricingSection {
     padding: 50px 20px;
-    background-color: #003366;
+    background-color:#000000;
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -35,7 +35,7 @@
 }
 .pricingCard {
     background-color: #ffffff;
-    color: #003366;
+    color: #D12C44;
     padding: 30px;
     display: flex;
     width: 328px;
@@ -74,7 +74,7 @@ margin: 0;
 
 .featureItem {
     font-size: 16px;
-    color: #003366;
+    color: #D12C44;
     margin-bottom: 10px;
 }
 

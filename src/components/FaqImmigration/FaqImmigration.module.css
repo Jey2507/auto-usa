@@ -1,7 +1,7 @@
 .faqSection {
     margin: 0 auto;
     padding: 50px 20px;
-    background-color: #003366;
+    background-color: #000000;
     color: white;
     text-align: center;
 }
@@ -20,7 +20,7 @@
 
 .faqItem {
     background-color: white;
-    color: #003366;
+    color: #D12C44;
     border-radius: 10px;
     margin-bottom: 15px;
     text-align: left;
@@ -29,7 +29,7 @@
 
 .faqQuestion {
     background-color: white;
-    color: #003366;
+    color: #D12C44;;
     font-size: 22px;
     font-weight: bold;
     width: 100%;
