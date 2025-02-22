@@ -32,7 +32,7 @@
 .logoText {
   width: max-content;
   text-transform: uppercase;
-  color: #D12C44;;
+  color: #D12C44;
   letter-spacing: 0.4px;
   font-weight: 400;
   font-size: 18px;
@@ -112,12 +112,12 @@ svg {
 }
 
 .active {
-  color:#ffd900c2;
-  border-color: #ffd900c2;
+  color:#D12C44;
+  border-color: #D12C44;
 }
 
 .link:hover {
-  border-color: #ffd900c2;
+  border-color: #D12C44;
 }
 
 .listHeader {

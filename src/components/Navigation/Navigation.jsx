@@ -27,7 +27,7 @@ export default function Navigation() {
           </nav>
           <button onClick={toggleMenu} className={css.burger}>
             <svg className={css.svgBurger} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none">
-                <path d="M3.5 6H24.5M3.5 14H24.5M3.5 22H24.5" stroke="#FFD900c2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 6H24.5M3.5 14H24.5M3.5 22H24.5" stroke="#D12C44" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button> 
         </header>
