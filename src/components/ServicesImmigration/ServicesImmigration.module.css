@@ -1,6 +1,6 @@
 .immigrationServicesSection {
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 20px 20px 50px 20px;
     background-color: #000000;
     color: white;
     text-align: center;
@@ -60,31 +60,35 @@
     background-color: #ffffff;
     color: #D12C44;
     padding: 30px;
-    border-radius: 10px;
-    width: 400px;
-    /* height: 520px; */
+    border-radius: 16px;
+    width: 100%;
+    height: max-content !important;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    transition: transform 0.8s ease, box-shadow 0.8s ease, border 0.8s ease;
 }
 
-.serviceItem:hover {
-    box-shadow:  0 16px 32px rgba(238, 53, 53, 0.5);
-    border:  3px solid #e60000;
-}
 
 .serviceIcon {
-    font-size: 48px;
-    color: #ff3333;
-    margin-bottom: 20px;
+    width: 32px;
+    height: 32px;
+    color: #D12C44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+.serviceIcon svg {
+    width: 32px;
+    height: 32px;
 }
 
 .serviceTitle {
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
     color: #D12C44;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin-top: 0;
 }
 
 .serviceDescription {
@@ -92,6 +96,18 @@
     color: #666666;
     font: 500;
     line-height: 1.5;
+    border: 6px solid #D12C44;
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 0;
+}
+
+.flexAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
 
 .centerBox {

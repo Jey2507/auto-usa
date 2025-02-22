@@ -53,6 +53,8 @@
     font-size: 600;
     width: 100%;
     max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .spanColor {
@@ -282,7 +284,7 @@
 .listTPSTwo li {
     padding: 8px 12px;
     border: 1px solid #D12C44;
-    border-radius: 6px;
+    border-radius: 16px;
     color: rgba(245, 245, 245, 0.837);
     background-color: #33333369;
     display: flex;gap: 12px;
@@ -293,10 +295,10 @@
     color: rgb(245, 245, 245);
     background-color: #730000ab;
     border: 1px solid #D12C44;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 12px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     font-size: 20px;
 }
 

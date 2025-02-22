@@ -78,20 +78,34 @@ margin: 0;
     margin-bottom: 10px;
 }
 
-.selectButton {
-    padding: 15px 30px;
-    background-color: #ff3333;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.centerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.selectButton:hover {
-    background-color: #e60000;
+.ctaButton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #333 0%, #d22 100%);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.ctaButton:hover {
+    background: linear-gradient(to bottom, #444 0%, #e33 100%);
+}
+
 
 
 @media (max-width: 1024px) and (min-width: 768px) {
