@@ -16,7 +16,7 @@ const PricesImmigration = () => {
         {
             title: "Печатная подача с формой Fee Waiver",
             price: "$250",
-            features: ["Заполнение TPS ", "Разрешение на работу"],
+            features: ["Заполнение TPS ", "Разрешение на работу", "Fee Waiver (Освобождение от оплаты в Uscis)"],
 
         },
 
