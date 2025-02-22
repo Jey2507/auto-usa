@@ -17,7 +17,7 @@ export default function Navigation() {
       <>
       <header className={css.navBox}>
           <div className={css.logoBox}>
-            <img className={css.imageLogo} src={Logo} alt="logo" />
+            {/* <img className={css.imageLogo} src={Logo} alt="logo" /> */}
             <h2 className={css.logoText}><span className={css.spanLogoText}>R</span>oyal Business Solution</h2>
           </div>
           <nav className={css.navbar}>
