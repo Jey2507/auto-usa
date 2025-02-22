@@ -4,6 +4,9 @@
     background-color: #000000;
     color: white;
     text-align: center;
+    background-image: url("../../assets/images/ellipse.png");
+    background-size: 110%;
+    background-position: bottom;
 }
 
 .title {

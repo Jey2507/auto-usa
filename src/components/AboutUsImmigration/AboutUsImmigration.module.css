@@ -3,6 +3,9 @@
     padding: 20px;
     background: #000000;
     font-family: 'Poppins', sans-serif;
+    background-image: url("../../assets/images/ellipse.png");
+    background-size: 190% 100%;
+    background-position: left;
 }
 
 .title {
@@ -23,12 +26,96 @@
 .descr {
     color: #fffffff5;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', sans-serif;
 }
 
 .listCowo {
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .listCowo h3 {
+    color: #D12C44;
+    border-bottom: 2px solid #D12C44;
+    border-left: 1px solid #D12C44;
+    border-bottom-left-radius: 16px;
+    padding: 0 0 12px 12px;
+    margin-bottom: 4px;
+    margin-top: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descrHelp {
+    color: #131313;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.listCowo p {
     color: #ffffff;
+    margin-top: 8px;
+    padding: 0 8px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+.help {
+    color: rgb(245, 245, 245);
+    background-color: #730000ab;
+    border: 1px solid #D12C44;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.descrQue { 
+    margin-top: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bigBox {
+    background-color: #ffffffe6; 
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bigBox ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bigBox ul li {
+    border-bottom: 2px solid #D12C44;
+    padding-bottom: 16px;
+    margin: 4px 0;
+}
+
+.bigBox ul li:last-child {
+    border: none;
+}
+
+.texttwo {
+    color: #D12C44; 
+    padding-bottom: 4px;
+    margin: 0 auto;
+    width: 260px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
 }
