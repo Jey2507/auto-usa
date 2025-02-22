@@ -48,7 +48,7 @@ const PricesImmigration = () => {
  
                         <h3 className={css.cardPrice}>{plan.price}</h3>
                         <div className={css.centerBox}>
-                            <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">Select</a>
+                            <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">Выбрать</a>
                         </div>
                         </div>
                     </div>
