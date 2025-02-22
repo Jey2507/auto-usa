@@ -3,6 +3,7 @@ import styles from "../OnePartPage/OnePartPage.module.css";
 // import tpsImage from "../assets/tps-image.jpg";
 import immigration from "../../assets/images/immigration.jpg"
 import { FaPassport, FaIdCard, FaUserShield, FaBriefcase, FaPlane, FaHome, FaPhone, FaEnvelope, FaCity, FaUserFriends, FaGlobe, FaBalanceScale, FaExclamationTriangle, FaCamera } from "react-icons/fa";
+import PricesImmigration from "../PricesImmigration/PricesImmigration";
 
 const OnePartPage = () => {
   return (
@@ -47,6 +48,7 @@ const OnePartPage = () => {
               </ul>
             </div>
         </div>
+        <PricesImmigration/>
         <div className={styles.boxTPS}>
             <h3 className={styles.textTPS}>Документы для подачи заявки на TPS <span className={styles.spanColor}>(Форма I-821)</span></h3>
             <ul className={styles.listTPS}>

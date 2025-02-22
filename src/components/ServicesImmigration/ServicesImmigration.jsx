@@ -134,7 +134,14 @@ const ServicesImmigration = () => {
 
     return (
         <section className={styles.immigrationServicesSection}>
-            <h1 className={styles.title}>Наши иммиграционные услуги</h1>
+            <h2 className={styles.title}>Консультация по иммиграционному <span className={styles.spanText}>статусу, адаптации, бизнесу и жизни</span> в США</h2>
+            <p className={styles.descrText}>Если вы уже находитесь в <span className={styles.spanText}>США</span> или только планируете переезд, важно знать возможности легализации, адаптации, финансовой стабильности, бизнеса и даже путешествий. Я провожу консультации, где рассказываю, какие пути легализации существуют, как адаптироваться в <span className={styles.spanText}>США</span>, устроить свою финансовую жизнь, открыть бизнес и какие возможности доступны для комфортной жизни.</p>
+            <div className={styles.boxTextPoz}>
+                <h4>Важно!</h4>
+                <h3>Я не являюсь адвокатом и не даю юридических консультаций</h3>
+                <p>Я – специалист, который помогает украинцам приехать в США, адаптироваться, получить легальные документы, такие как Social Security, рабочее разрешение, статус TPS, а также разобраться в вариантах легализации, финансовых вопросах, бизнесе, жилье и путешествиях</p>
+            </div>
+            <h3 className={styles.title}>Какие <span className={styles.spanText}>вопросы</span> я помогу разобрать на консультации?</h3>
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => (
                     <div key={index} className={styles.serviceItem} ref={(el) => (cardRefs.current[index] = el)} style={{ height: heights[index] || "auto" }}>

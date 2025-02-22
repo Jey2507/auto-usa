@@ -25,7 +25,7 @@ const PricesImmigration = () => {
     return (
         <section className={css.pricingSection}>
             <div className={css.textCenter}>
-                <h2 className={css.title}>Стоимость моих услуг по заполнению форм </h2>
+                <h2 className={css.title}>Стоимость моих услуг <span className={css.spanColor}>по заполнению</span> форм </h2>
             </div>
             <div className={css.gridContainer}>
                 {pricingPlans.map((plan, index) => (

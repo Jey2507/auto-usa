@@ -18,8 +18,9 @@
     url("../../assets/images/fon.jpg");
     background-size: cover;
     background-position: bottom;
+    background-repeat: no-repeat;
     height: 700px;
-    max-width: 460px;
+    max-width: 420px;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -258,6 +259,7 @@
     margin: 0 auto;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 40px;
     width: 100%;
     max-width: 385px;
 }

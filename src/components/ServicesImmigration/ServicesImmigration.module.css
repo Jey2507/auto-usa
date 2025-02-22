@@ -10,8 +10,12 @@
     font-size: 48px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spanText {
+    color: #D12C44;
 }
 
 .description {
@@ -57,7 +61,7 @@
 }
 
 .serviceItem {
-    background-color: #ffffff;
+    background-color: rgb(247, 247, 247);
     color: #D12C44;
     padding: 30px;
     border-radius: 16px;
@@ -84,7 +88,7 @@
 }
 
 .serviceTitle {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: #D12C44;
     margin-bottom: 0px;
@@ -94,7 +98,7 @@
 .serviceDescription {
     font-size: 20px;
     color: #666666;
-    font: 500;
+    font-weight: 600;
     line-height: 1.5;
     border: 6px solid #D12C44;
     border-radius: 16px;
@@ -136,6 +140,66 @@
 
 .ctaButton:hover {
     background: linear-gradient(to bottom, #444 0%, #e33 100%);
+}
+
+.descrText {
+    z-index: 5;
+    font-size: 16px;
+    color: rgb(247, 247, 247);
+    margin-bottom: 40px;
+    font-weight: 500;
+    border: 1px solid #D12C44;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #333333a3;
+    text-align: center;
+    font-size: 600;
+    width: 100%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxTextPoz {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.boxTextPoz h3 {
+    border-top: 1px solid #D12C44;
+    border-bottom: 1px solid #D12C44;
+    padding: 12px 0px;
+    margin-top: 6px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.boxTextPoz h4 {
+    margin: 0;
+    color: #D12C44;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boxTextPoz p {
+    color: rgb(245, 245, 245);
+    background-color: #730000ab;
+    border: 1px solid #D12C44;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.textQw {
+    color: #D12C44;
 }
 
 
