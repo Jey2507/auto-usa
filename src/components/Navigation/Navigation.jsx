@@ -23,6 +23,7 @@ export default function Navigation() {
           <nav className={css.navbar}>
               <NavLink to="/" className={getNavLinkClass}>Marketing</NavLink>
               <NavLink to="/immigration" className={getNavLinkClass}>Immigration</NavLink>
+              <NavLink to="/business" className={getNavLinkClass}>OnlineBusiness</NavLink>
               <NavLink to="/auto" className={getNavLinkClass}>Auto</NavLink>
           </nav>
           <button onClick={toggleMenu} className={css.burger}>
@@ -39,6 +40,9 @@ export default function Navigation() {
             </li>
             <li>
             <NavLink to="/immigration" className={getNavLinkClass}>Immigration</NavLink>
+            </li>
+            <li>
+            <NavLink to="/business" className={getNavLinkClass}>OnlineBusiness</NavLink>
             </li>
             <li>
             <NavLink to="/auto" className={getNavLinkClass}>Auto</NavLink>

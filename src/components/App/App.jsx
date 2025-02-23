@@ -5,6 +5,7 @@ import Layout from "../Layout/Layout.jsx";
 
 const MarketingPage = lazy(() => import("../../pages/MarketingPage/MarketingPage.jsx"))
 const ImmigrationPage = lazy(() => import("../../pages/ImmigrationPage/ImmigrationPage.jsx"))
+const OnlineBusiness = lazy(() => import("../../pages/OnlineBusiness/OnlineBusiness.jsx"))
 const AutoPage = lazy(() => import("../../pages/AutoPage/AutoPage.jsx"))
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage/NotFoundPage"))
 
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<MarketingPage />} />
         <Route path='/immigration' element={<ImmigrationPage />} />
+        <Route path='/business' element={<OnlineBusiness />} />
         <Route path='/auto' element={<AutoPage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
