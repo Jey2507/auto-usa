@@ -6,6 +6,7 @@
     background-image: url("../../assets/images/ellipse.png");
     background-size: 200% 100%;
     background-position: right;
+    margin-top: 20px;
 }
 
 .title {
