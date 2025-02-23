@@ -45,7 +45,7 @@ export default function OnlineBusiness() {
                 <p>Если вы ищете дополнительный доход и хотите развиваться в автомобильном бизнесе в США, у нас есть уникальная возможность для вас!<br /><br />
                 Наши специалисты с 20+ летним опытом работы в автомобильной сфере в США помогут вам запустить свой бизнес с нуля по покупке, продаже и аренде автомобилей.
                 </p>
-                <h3>Что мы <span className={css.spanColorTwo}>предлагаем?</span></h3>
+                <h3>Что <span className={css.spanColorTwo}>мы</span> предлагаем?</h3>
                 <ul className={css.listTPS}>
                     <li>✔<span className={css.spanColor}> Пошаговое обучение</span> – как купить авто через аукционы и перепродать с прибылью</li>
                     <li>✔ Как<span className={css.spanColor}> продавать машины</span> через Marketplace и в кредит клиентам</li>
