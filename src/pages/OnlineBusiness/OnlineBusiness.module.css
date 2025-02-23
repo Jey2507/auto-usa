@@ -41,6 +41,10 @@
     font-weight: 600;
 }
 
+.spanColorTwo {
+    color: #fafafa;
+}
+
 .list {
     display: flex;
     flex-direction: column;
