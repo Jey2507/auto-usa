@@ -97,10 +97,11 @@ svg {
 .link {
   text-decoration: none;
   color: #000000e0;
-  width: 110px;
+  width: 140px;
   display: flex;
   font-size: 18px;
   height: 36px;
+  padding: 4px;
   display: flex;
   justify-content: center;
   align-items: center;

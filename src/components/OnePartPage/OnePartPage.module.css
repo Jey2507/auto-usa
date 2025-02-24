@@ -186,36 +186,6 @@
     margin-top: 20px;
 }
 
-.btnTelegram {
-    background: #0088cc;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btnTelegram:hover {
-    background: #0077b3;
-    transform: scale(1.05);
-}
-
-.btnWhatsapp {
-    background: #25d366;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btnWhatsapp:hover {
-    background: #1da851;
-    transform: scale(1.05);
-}
-
 .sectionConfidential {
     background: linear-gradient(145deg, #1e3a8a, #0f2c6d);
     color: white;
