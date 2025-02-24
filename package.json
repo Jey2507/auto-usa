@@ -23,9 +23,7 @@
     "react-icons": "^5.4.0",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.28.2",
-    "spiner": "^1.0.0",
-    "swiper": "^11.2.4",
-    "yet-another-react-lightbox": "^3.21.7"
+    "spiner": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
