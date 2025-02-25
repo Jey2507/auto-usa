@@ -68,9 +68,9 @@
 }
 
 .fon {
-    background: 
-    linear-gradient( #00000000, #00000048,#000000), 
-    url("../../assets/images/fonTwo.jpg");
+    background:
+        linear-gradient(#00000000, #00000048, #000000),
+        url("../../assets/images/fonTwo.jpg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@
     font-size: 24px;
 }
 
-.containerEndp{
+.containerEndp {
     font-size: 16px;
     color: rgb(247, 247, 247);
     margin-bottom: 60px;
@@ -273,4 +273,191 @@
     text-align: center;
     margin-bottom: 32px;
     font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width:1439px){
+
+  
+.fon{
+margin-top: 32px;
+        max-width: 96%;
+       height: 980px;
+}
+
+  .title {
+     
+      font-size: 28px;
+  }
+
+  .descr {
+        margin-top: -90px;
+      font-weight: 600;
+      font-size: 18px;
+  }
+
+  .lastDescr {
+      padding: 18px;
+  }
+
+  .ctaButton {
+      padding: 12px;
+      font-size: 20px;
+  }
+
+  .descr,
+  .descrHelpTwo,
+  .containerEndp {
+      font-size: 18px;
+  }
+
+  .listOnline li h3,
+  .boxInfo h3,
+  .containerEnd ul li h3 {
+      font-size: 22px;
+  }
+
+  .listOnline li h4,
+  .containerEnd ul li h4 {
+      font-size: 18px;
+  }
+
+  .listOnline li p,
+  .boxInfo p,
+  .containerEnd ul li p,
+  .listTPS li,
+  .list li,
+  .lastDescr {
+      font-size: 16px;
+  }
+
+  .containerEnd h2,
+  .boxInfo h2 {
+      font-size: 26px;
+  }
+}
+@media (min-width: 1440px) {
+    .containerBusiness {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .fon {
+        background:
+            linear-gradient(#00000000, #00000048, #000000),
+            url("../../assets/images/businnes.JPG");
+
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 700px;
+        margin: 20px auto 40px auto;
+        display: flex;
+        padding-top: 60px;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+
+    }
+
+    .title {
+        margin-top: 100px;
+        width: 50%;
+        font-size: 32px;
+    }
+
+    .descr {
+        width: 860px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .listOnline {
+        width: 1140px;
+        margin-bottom: 40px;
+    }
+
+    .descrHelpTwo {
+        width: 1140px;
+    }
+
+    .boxInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listTPS {
+        width: 1140px;
+    }
+
+    .boxInfoText {
+        width: 1160px;
+    }
+
+    .containerEnd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerEndp {
+        width: 1240px;
+    }
+
+    .containerEnd>ul {
+        display: grid;
+        grid-template-columns: repeat(2, 660px);
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+
+    .lastDescr {
+        padding: 22px;
+    }
+
+    .ctaButton {
+        padding: 15px;
+    font-size: 22px;
+    }
+
+.descr,
+.descrHelpTwo,
+.containerEndp {
+    font-size: 20px;
+}
+
+.listOnline li h3,
+.boxInfo h3,
+.containerEnd ul li h3 {
+    font-size: 24px;
+}
+
+.listOnline li h4,
+.containerEnd ul li h4 {
+    font-size: 20px;
+}
+
+.listOnline li p,
+.boxInfo p,
+.containerEnd ul li p,
+.listTPS li,.list li,
+.lastDescr {
+    font-size: 18px;
+}
+
+.containerEnd h2,
+.boxInfo h2 {
+    font-size: 28px;
+}
+
+
 }
