@@ -6,8 +6,8 @@ const AboutUsAuto = () => {
         <section className={css.aboutUsAutoSection}>
             <div className={css.backCar}></div>
             <div className={css.boxText}>
-                <h2>ПОЛУЧИТЕ ПОШАГОВЫЙ ПЛАН</h2>
                 <h1><span className={css.spanColor}>Как выгодно купить машину</span> с онлайн аукционов США, <span className={css.spanColor}>через проверенного брокера</span></h1>
+                <h2>ПОЛУЧИТЕ ПОШАГОВЫЙ ПЛАН</h2>
                 <p>И сэкономить около 30-40% от рыночной стоимости авто</p>
                 {/* <div className={css.centerBox}>
                             <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
