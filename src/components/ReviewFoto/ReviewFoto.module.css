@@ -71,7 +71,7 @@
 }
 
 .swipeBtnProjects:disabled {
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 2px solid rgba(250, 250, 250, 0.2);
 }
 
 .swipeBtnProjects:disabled .btnSvg {
