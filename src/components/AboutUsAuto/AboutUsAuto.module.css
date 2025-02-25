@@ -43,6 +43,7 @@
 }
 
 .backCar {
+    display: block;
     margin-top: 60px;
     background: 
     linear-gradient( #00000000, #00000000, #000000), 
