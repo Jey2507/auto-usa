@@ -389,6 +389,26 @@
 
 /* Десктопна версія 1440px */
 @media screen and (min-width: 1440px) {
+
+    .fon{
+        background:
+                linear-gradient(#00000000, #00000048, #000000),
+                url("../../assets/images/fonDesktop.JPG");
+        background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            height: 700px;
+            margin: 20px auto 40px auto;
+            display: flex;
+            padding-top: 60px;
+            padding-left: 12px;
+            padding-right: 12px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 20px;
+    }
     .tpsContainer {
         padding: 40px;
         margin-top: 0px;
@@ -417,7 +437,7 @@
 
     .subtitle {
         font-size: 22px;
-        width: 550px;
+        width: 900px;
         height: max-content;
         padding: 16px 20px;
     }
@@ -433,7 +453,8 @@
 
     .boxHero {
         gap: 0;
-        justify-content: space-between;
+        justify-content: center;
+        
     }
 
     .boxTPS {
