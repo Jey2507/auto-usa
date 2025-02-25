@@ -96,32 +96,6 @@ const OnePartPage = () => {
           <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Подробнее</a>
         </div>
       </div>
-
-      {/* <div className={styles.section}>
-        <h2 className={styles.sectionTitle}>Temporary Protected Status (TPS) для украинцев</h2>
-        <p>
-          TPS – это специальный иммиграционный статус, который позволяет украинцам временно находиться
-          и работать в США, а также защищает от депортации.
-        </p>
-      </div>
-
-      <div className={styles.section}>
-        <h2 className={styles.sectionTitle}><FaClipboardList /> Необходимые документы</h2>
-        <ul className={styles.list}>
-          <li><FaPassport /> Загранпаспорт</li>
-          <li><FaClipboardList /> Заполненная форма I-821</li>
-          <li><FaClipboardList /> Заполненная форма I-765</li>
-        </ul>
-      </div>
-
-      <div className={styles.section}>
-        <h2 className={styles.sectionTitle}><FaPhone /> Контакты</h2>
-        <p>Свяжитесь со мной для консультации:</p>
-        <div className={styles.buttons}>
-          <a href="https://t.me/yourtelegram" className={styles.btnTelegram}>Telegram</a>
-          <a href="https://wa.me/yourwhatsapp" className={styles.btnWhatsapp}>WhatsApp</a>
-        </div>
-      </div> */}
     </section>
   );
 };
