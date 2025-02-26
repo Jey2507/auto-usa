@@ -3,7 +3,7 @@ import css from "../OnlineBusiness/OnlineBusiness.module.css"
 export default function OnlineBusiness() {
     return (
         <section className={css.container}>
-            <div>
+            <div className={css.containerBusiness}>
                 <div className={css.fon}>
                     <h1 className={css.title}>Мы предоставляем возможности для иммигрантов, чтобы стартовать в заработке и бизнесе в США</h1>
                 </div>
@@ -42,7 +42,7 @@ export default function OnlineBusiness() {
             </div>
             <div className={css.boxInfo}>
                 <h2>Обучение бизнесу по <span className={css.spanColor}>покупке, продаже и аренде</span> автомобилей в США</h2>
-                <p>Если вы ищете дополнительный доход и хотите развиваться в автомобильном бизнесе в США, у нас есть уникальная возможность для вас!<br /><br />
+                <p className={css.boxInfoText}>Если вы ищете дополнительный доход и хотите развиваться в автомобильном бизнесе в США, у нас есть уникальная возможность для вас!<br /><br />
                 Наши специалисты с 20+ летним опытом работы в автомобильной сфере в США помогут вам запустить свой бизнес с нуля по покупке, продаже и аренде автомобилей.
                 </p>
                 <h3>Что <span className={css.spanColorTwo}>мы</span> предлагаем?</h3>

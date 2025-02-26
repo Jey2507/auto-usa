@@ -106,27 +106,32 @@ const services = [
 
 const ServicesImmigration = () => {
     const [heights, setHeights] = useState([]);
+    const [descHeights, setDescHeights] = useState([]);
     const cardRefs = useRef([]);
+    const descRefs = useRef([]);
 
     useEffect(() => {
         const updateHeights = () => {
             if (cardRefs.current.length > 0) {
-                const newHeights = [];
                 const screenWidth = window.innerWidth;
-                const itemsPerRow = screenWidth >= 1439 ? 4 : 2;
+                const itemsPerRow = screenWidth >= 1439 ? 3 : 2; // Визначаємо кількість колонок у рядку
+                let newHeights = [...heights];
 
                 for (let i = 0; i < cardRefs.current.length; i += itemsPerRow) {
-                    const rowHeights = cardRefs.current.slice(i, i + itemsPerRow).map(ref => ref?.offsetHeight || 0);
-                    const maxHeight = Math.max(...rowHeights);
-                    for (let j = 0; j < itemsPerRow; j++) {
-                        if (i + j < cardRefs.current.length) {
+                    const rowElements = cardRefs.current.slice(i, i + itemsPerRow);
+                    const maxHeight = Math.max(...rowElements.map(ref => ref?.offsetHeight || 0));
+
+                    rowElements.forEach((_, j) => {
+                        if (i + j < newHeights.length) {
                             newHeights[i + j] = maxHeight;
                         }
-                    }
+                    });
                 }
+
                 setHeights(newHeights);
             }
         };
+
         updateHeights();
         window.addEventListener("resize", updateHeights);
         return () => window.removeEventListener("resize", updateHeights);
@@ -135,23 +140,15 @@ const ServicesImmigration = () => {
     return (
         <section className={styles.immigrationServicesSection}>
             <h2 className={styles.title}>Консультация по иммиграционному <span className={styles.spanText}>статусу, адаптации, бизнесу и жизни</span> в США</h2>
-            <p className={styles.descrText}>Если вы уже находитесь в <span className={styles.spanText}>США</span> или только планируете переезд, важно знать возможности легализации, адаптации, финансовой стабильности, бизнеса и даже путешествий. Я провожу консультации, где рассказываю, какие пути легализации существуют, как адаптироваться в <span className={styles.spanText}>США</span>, устроить свою финансовую жизнь, открыть бизнес и какие возможности доступны для комфортной жизни.</p>
-            <div className={styles.boxTextPoz}>
-                <h4>Важно!</h4>
-                <h3>Я не являюсь адвокатом и не даю юридических консультаций</h3>
-                <p>Я – специалист, который помогает украинцам приехать в США, адаптироваться, получить легальные документы, такие как Social Security, рабочее разрешение, статус TPS, а также разобраться в вариантах легализации, финансовых вопросах, бизнесе, жилье и путешествиях</p>
-            </div>
-            <h3 className={styles.title}>Какие <span className={styles.spanText}>вопросы</span> я помогу разобрать на консультации?</h3>
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => (
                     <div key={index} className={styles.serviceItem} ref={(el) => (cardRefs.current[index] = el)} style={{ height: heights[index] || "auto" }}>
                         <h3 className={styles.serviceTitle}>{service.title}</h3>
-                        <p className={styles.serviceDescription}>{service.description}</p>
+                        <p className={styles.serviceDescription} ref={(el) => (descRefs.current[index] = el)} style={{ height: descHeights[index] || "auto" }}>
+                            {service.description}
+                        </p>
                     </div>
                 ))}
-            </div>
-            <div className={styles.centerBox}>
-                <a href="https://t.me/zoia_kibysh" target="_blank" className={styles.ctaButton} rel="noreferrer">Подробнее</a>
             </div>
         </section>
     );
