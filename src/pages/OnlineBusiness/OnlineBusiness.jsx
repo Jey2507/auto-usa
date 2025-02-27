@@ -3,10 +3,10 @@ import css from "../OnlineBusiness/OnlineBusiness.module.css"
 export default function OnlineBusiness() {
     return (
         <section className={css.container}>
-            <div className={css.containerBusiness}>
                 <div className={css.fon}>
                     <h1 className={css.title}>Мы предоставляем возможности для иммигрантов, чтобы стартовать в заработке и бизнесе в США</h1>
                 </div>
+                <div className={css.containerBusiness}>
                 <p className={css.descr}>📌 Какие <span className={css.spanColor}>трудности</span> испытывают иммигранты в США, когда ищут хороший доход?</p>
                 <ul className={css.list}>
                     <li>❌ <span className={css.spanColor}>Нестабильный заработок</span> – На первых порах сложно найти работу с достойной оплатой</li>

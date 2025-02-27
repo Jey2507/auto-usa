@@ -1,15 +1,11 @@
 .tpsContainer {
     width: 100%;
-    padding: 20px;
     background: #000000;
     font-family: 'Poppins', sans-serif;
 }
 
 .image {
-    min-width: 280px;
-    max-width: 400px;
     width: 100%;
-    border-radius: 8px;
     margin: 0 auto;
     display: block;
 }
@@ -19,15 +15,15 @@
     linear-gradient( #00000000, #00000048,#000000), 
     url("../../assets/images/fon.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     height: 700px;
-    max-width: 370px;
     width: 100%;
     margin: 20px auto 40px auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 60px;
 }
 
 .title {
@@ -42,7 +38,7 @@
 }
 
 .subtitle {
-    margin-top: -240px;
+    margin-top: -200px;
     z-index: 5;
     font-size: 16px;
     color: rgb(247, 247, 247);
@@ -55,9 +51,12 @@
     text-align: center;
     font-size: 600;
     width: 100%;
-    max-width: 340px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.boxHero {
+    padding: 0 20px;
 }
 
 .spanColor {
@@ -140,6 +139,10 @@
     padding: 12px 0px;
 }
 
+.boxQue {
+    padding: 0 20px;
+}
+
 .section {
     background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
     padding: 25px;
@@ -208,6 +211,7 @@
 
 .boxTPS {
     margin-top: 20px;
+    padding: 0 20px;
 }
 
 .textTPS {
@@ -216,6 +220,10 @@
     text-align: center;
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
+}
+
+.boxAny {
+    padding: 0 20px;
 }
 
 .descrTPS {
@@ -318,6 +326,9 @@
     background: linear-gradient(to bottom, #444 0%, #e33 100%);
 }
 
+.boxFlex {
+    padding: 0 20px;
+}
 
 @media screen and (min-width: 768px) {
     .boxHero {

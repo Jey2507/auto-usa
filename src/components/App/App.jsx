@@ -13,8 +13,8 @@ export default function App() {
   return (
     <Layout>
       <Routes>
-        <Route path='/' element={<MarketingPage />} />
-        <Route path='/immigration' element={<ImmigrationPage />} />
+        <Route path='/' element={<ImmigrationPage />} />
+        <Route path='/marketing' element={<MarketingPage />} />
         <Route path='/business' element={<OnlineBusiness />} />
         <Route path='/auto' element={<AutoPage />} />
         <Route path='*' element={<NotFoundPage />} />

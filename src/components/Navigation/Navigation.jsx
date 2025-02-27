@@ -21,9 +21,9 @@ export default function Navigation() {
             <h2 className={css.logoText}><span className={css.spanLogoText}>R</span>oyal Business Solution</h2>
           </div>
           <nav className={css.navbar}>
-              <NavLink to="/" className={getNavLinkClass}>Marketing</NavLink>
-              <NavLink to="/immigration" className={getNavLinkClass}>Immigration</NavLink>
-              <NavLink to="/business" className={getNavLinkClass}>OnlineBusiness</NavLink>
+              <NavLink to="/" className={getNavLinkClass}>Immigration</NavLink>  
+              <NavLink to="/business" className={getNavLinkClass}>Online Business</NavLink>
+              <NavLink to="/marketing" className={getNavLinkClass}>Marketing</NavLink>
               <NavLink to="/auto" className={getNavLinkClass}>Auto</NavLink>
           </nav>
           <button onClick={toggleMenu} className={css.burger}>
@@ -36,13 +36,13 @@ export default function Navigation() {
         <div onClick={toggleMenu} className={clsx(css.navHeader, { [css.navOpen]: isOpen, [css.navClosed]: !isOpen })}>
           <ul className={css.listHeader}>
             <li>
-            <NavLink to="/" className={getNavLinkClass}>Marketing</NavLink>
+            <NavLink to="/" className={getNavLinkClass}>Immigration</NavLink>
             </li>
             <li>
-            <NavLink to="/immigration" className={getNavLinkClass}>Immigration</NavLink>
+            <NavLink to="/business" className={getNavLinkClass}>Online Business</NavLink>
             </li>
             <li>
-            <NavLink to="/business" className={getNavLinkClass}>OnlineBusiness</NavLink>
+            <NavLink to="/marketing" className={getNavLinkClass}>Marketing</NavLink>
             </li>
             <li>
             <NavLink to="/auto" className={getNavLinkClass}>Auto</NavLink>
