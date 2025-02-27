@@ -3,10 +3,10 @@ import css from './PricesImmigration.module.css';
 const PricesImmigration = () => {
     const pricingPlans = [
         {
-            title: "Заполнение только формы на TPS (I-821)",
+            title: "Заполнение формы на TPS",
             price: "$120", features: [],
         }, {
-            title: "Заполнение только формы на рабочее разрешение (I-765)",
+            title: "Заполнение формы на рабочее разрешение",
             price: "$100", features: [],
         }, {
             title: "Онлайн подача",
@@ -54,6 +54,7 @@ const PricesImmigration = () => {
                     </div>
                 ))}
             </div>
+            <p className={css.descrHelp}>Для больших семей, 2+ человека одновременно, у нас действует скидка!</p>
         </section>
     );
 };

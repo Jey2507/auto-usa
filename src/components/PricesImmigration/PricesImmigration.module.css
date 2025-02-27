@@ -7,6 +7,17 @@
    
 }
 
+.descrHelp {
+    color: rgb(245, 245, 245);
+    background-color: #730000ab;
+    border: 1px solid #D12C44;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
 .textCenter {
     text-align: center;
 }
