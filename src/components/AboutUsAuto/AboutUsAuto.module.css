@@ -155,3 +155,39 @@
 .listProblem li svg {
     fill: #ffd700;
 }
+
+.boxListItem h2 {
+    color: #fafafa;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.boxListItem ul li h3 {
+    color: #d4af37;
+    text-align: center;
+}
+
+.boxListItem ul li {
+    border-bottom: 2px solid #d4af37;
+    padding: 32px;
+}
+
+.boxListItem ul li:last-child {
+    border: none;
+}
+
+.boxListItem ul li p {
+    text-align: center;
+    color: #fafafa;
+}
+
+.boxListItem ul li {
+    background: url("../../assets/images/yellow.png");
+    background-position: top;
+    background-size: 180% 260%;
+}
+
+.boxListItem ul {
+    margin-bottom: 60px;
+}

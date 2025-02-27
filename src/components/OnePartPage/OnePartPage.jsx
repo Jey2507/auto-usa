@@ -74,7 +74,7 @@ const OnePartPage = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div className={styles.boxAny}>
         <h3 className={styles.textHthree}>Заявка на Рабочее Разрешение <span className={styles.spanColor}>(Форма I-765)</span></h3>
         <p className={styles.descrForm}>Форма I-765 – это заявление на получение разрешения на работу в США. Подавать его могут украинцы, получающие статус TPS, находящиеся под программой Uniting for Ukraine (U4U), либо имеющие право на трудоустройство по другим основаниям.</p>
         <div className={styles.divDoc}>
