@@ -323,7 +323,6 @@
     .boxHero {
         display: flex;
         margin-bottom: 20px;
-        flex-direction: row-reverse;
         gap: 20px;
     }
 
@@ -389,7 +388,14 @@
 
 /* Десктопна версія 1440px */
 @media screen and (min-width: 1440px) {
+    .containerHero{
+        display: flex;
 
+    }
+.boxHeroQue{
+    display: flex;
+    flex-direction: column;
+}
     .fon{
         background:
                 linear-gradient(#00000000, #00000048, #000000),
@@ -425,11 +431,12 @@
     }
 
     .boxQue {
-        width: 550px;
-        position: absolute;
+        width: 500px;
+        /* position: absolute; */
         bottom: -16px;
     }
 
+   
     .bigBox {
         max-width: 700px;
         margin: 60px 0 0 0;
@@ -437,23 +444,28 @@
 
     .subtitle {
         font-size: 22px;
-        width: 900px;
+        width: 500px;
+        min-width: 490px;
         height: max-content;
         padding: 16px 20px;
     }
-
+.boxQue>p{
+    text-align: center;
+}
     .image {
         max-width: 840px;
     }
 
     .boxFlex {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
 
     .boxHero {
         gap: 0;
-        justify-content: center;
+       width: 350px;
         
     }
 
@@ -512,8 +524,8 @@
     }
 
     .descrHelp {
-        margin-top: 40px;
-        margin-bottom: 40px;
+       width: max-content;
+       margin: 40px auto;
     }
 
     .descrTPS {
