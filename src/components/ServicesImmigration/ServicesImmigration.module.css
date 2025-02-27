@@ -299,6 +299,9 @@
         padding: 18px;
         width: 100%;
         max-width: 330px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
     }
 
     .serviceIcon {

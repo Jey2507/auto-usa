@@ -288,7 +288,7 @@
 
   
 .fon{
-margin-top: 32px;
+/* margin-top: 32px; */
         max-width: 96%;
        height: 980px;
 }
@@ -351,7 +351,9 @@ margin-top: 32px;
         align-items: center;
 
     }
-
+.container{
+    margin-top: 0;
+}
 
     .fon {
         background:
