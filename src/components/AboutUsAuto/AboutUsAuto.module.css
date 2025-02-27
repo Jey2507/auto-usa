@@ -65,7 +65,7 @@
     display: inline-block;
     padding: 15px 30px;
     font-size: 16px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -190,4 +190,112 @@
 
 .boxListItem ul {
     margin-bottom: 60px;
+}
+
+.divAutos {
+    padding: 20px;
+}
+
+.divAutos h2 {
+    color: #fafafa;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.descrAuto {
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.descrAutoTwo {
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.divAutos h3 {
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 32px;
+    background: url("../../assets/images/yellow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    padding: 12px 0;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.divAutos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.divAutos ul li {
+    padding: 12px;
+    border: 1px solid gold;
+    border-radius: 16px;
+    color: rgba(245, 245, 245, 0.936);
+    background-color: #33333369;
+}
+
+.divAutos ul h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 8px #d4af37;
+} 
+
+.advantageItem {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantageItem svg {
+    filter: drop-shadow(2px 4px 6px #d4af37);
+}
+
+.boxAbout {
+    padding: 20px;
+}
+
+.boxAbout h2 {
+    color: #fafafa;
+    text-align: center;
+    font-size: 24px;
+}
+
+.spanColorTwo {
+    color: #fafafa;
+}
+
+.boxAbout h3 {
+    color: rgb(0, 0, 0);
+    background-color: #d4af37df;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.boxAbout p {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid gold;
+    border-left: 1px solid gold;
+    border-bottom-left-radius: 16px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
 }

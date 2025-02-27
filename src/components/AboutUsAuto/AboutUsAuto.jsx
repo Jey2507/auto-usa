@@ -1,5 +1,7 @@
 import css from './AboutUsAuto.module.css';
 import { FaGavel, FaEye, FaTools, FaCarCrash, FaTruckLoading, FaSearch, FaWrench, FaExclamationTriangle } from "react-icons/fa";
+import { FaDollarSign, FaCarSide, FaShippingFast, FaHandsHelping } from "react-icons/fa";
+
 
 const AboutUsAuto = () => {
     return (
@@ -94,6 +96,66 @@ const AboutUsAuto = () => {
                     <div className={css.centerBox}>
                             <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
                      </div>
+                </div>
+                <div className={css.divAutos}>
+                    <h2>Что такое <span className={css.spanColor}>аукцион</span> и как он работает?</h2>
+                    <p className={css.descrAuto}><span className={css.spanColor}>Автомобильный аукцион</span> представляет собой онлайн рынок, где каждый желающий получает возможность оценить транспорт, и приобрести машину по привлекательной цене. На проверенных автоаукционах размещаются объявления о продаже автомобилей после дтп, но также есть возможность найти предложения с минимальными повреждениями либо совсем без повреждений. В интернете функционирует ряд сайтов, которые дают опцию сформировать заказ машины согласно индивидуальным параметрам будущего владельца</p>
+                    <p className={css.descrAutoTwo}>Вы <span className={css.spanColor}>сможете обрести уверенность</span> в том, что будущий автомобиль сможет радовать вас долгие годы.<br /> Важно лишь грамотно отнестись к процедуре выбора площадки, которая предлагает подобную услугу. Покупка авто с аукциона всегда несет за собой определенные риски (правильная документация, техническое состояние машины и другие нюансы), но лишь доверяя проверенному брокеру, они будут минимальными</p>
+                    <h2>В чем <span className={css.spanColor}>преимущества</span> покупки авто на аукционе?</h2>
+                    <h3>Наша главная цель — <span className={css.spanColor}>сделать для вас процесс покупки автомобиля быстрым и доступным</span></h3>
+
+                    <ul>
+                    <li>
+                        <div className={css.advantageItem}>
+                        <FaDollarSign className={css.advantageIcon} />
+                        <h4>Экономия средств</h4>
+                        </div>
+                        <p>
+                        Доступность в плане ценовой политики. Даже с учетом доставки, постановки на учет и дальнейшего ремонта 
+                        вы можете обрести существенную экономию, и получить качественный автомобиль.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <div className={css.advantageItem}>
+                        <FaCarSide className={css.advantageIcon} />
+                        <h4>Преимущество выбора</h4>
+                        </div>
+                        <p>
+                        Огромное преимущество разного выбора автотранспорта, на аукционах в США. Вы можете приобрести автомобиль, 
+                        как после ДТП, так и совсем без повреждений.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <div className={css.advantageItem}>
+                        <FaShippingFast className={css.advantageIcon} />
+                        <h4>Скорость доставки</h4>
+                        </div>
+                        <p>
+                        Выбрать транспортное средство можно в считанные дни, особенно если воспользоваться сервисом нашей компании. 
+                        После подбора и покупки, доставка осуществляется в короткие сроки.
+                        </p>
+                    </li>
+                    
+                    <li>
+                        <div className={css.advantageItem}>
+                        <FaHandsHelping className={css.advantageIcon} />
+                        <h4>Услуги под ключ</h4>
+                        </div>
+                        <p>
+                        Не нужно ни о чем беспокоиться, если вы обратились к нам. Достаточно лишь указать ваши пожелания, 
+                        и специалист поможет сделать выбор в пользу лучшего транспортного средства.
+                        </p>
+                    </li>
+                    </ul>
+                </div>
+                <div className={css.boxAbout}>
+                    <h2>О нас</h2>
+                    <h3>Компания <span className={css.spanColorTwo}>Autobound LLC</span> на рынке с 2018 года</h3>
+                    <p>Более <span className={css.spanColor}>2500</span> выигранных машин для клиентов</p>
+                    <p>Более <span className={css.spanColor}>500</span> довольных клиентов за последний год</p>
+                    <p>Более <span className={css.spanColor}>4-х лет</span> радуем вас качественным сервисом</p>
                 </div>
         </section>
     );
