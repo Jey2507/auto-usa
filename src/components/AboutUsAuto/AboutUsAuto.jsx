@@ -181,7 +181,7 @@ const AboutUsAuto = () => {
                                 <li>- PDF файл с информацией о техническом обслуживании и всей историей машины</li>
                             </ul>
                             <div className={css.centerBox}>
-                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">УЗНАТЬ ПОДРОБНЕЕ</a>
                             </div>
                         </li>
                         <li className={css.itemBuy}>
@@ -194,7 +194,7 @@ const AboutUsAuto = () => {
                                 <li>- Живая связь по телефону во время аукциона</li>
                             </ul>
                             <div className={css.centerBox}>
-                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">УЗНАТЬ ПОДРОБНЕЕ</a>
                             </div>
                         </li>
                         <li className={css.itemBuy}>
@@ -207,7 +207,7 @@ const AboutUsAuto = () => {
                                 <li>- Живая связь по телефону во время аукциона</li>
                             </ul>
                             <div className={css.centerBox}>
-                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">УЗНАТЬ ПОДРОБНЕЕ</a>
                             </div>
                         </li>
                     </ul>
