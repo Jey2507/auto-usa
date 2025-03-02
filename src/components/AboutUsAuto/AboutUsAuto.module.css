@@ -65,7 +65,7 @@
     display: inline-block;
     padding: 15px 30px;
     font-size: 16px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -190,4 +190,467 @@
 
 .boxListItem ul {
     margin-bottom: 60px;
+}
+
+.divAutos {
+    padding: 20px;
+}
+
+.divAutos h2 {
+    color: #fafafa;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.descrAuto {
+    color: #fafafadf;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.descrAutoTwo {
+    color: #fafafadf;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+
+.divAutos h3 {
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 32px;
+    background: url("../../assets/images/yellow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    padding: 12px 0;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.divAutos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.divAutos ul li {
+    padding: 12px;
+    border: 1px solid gold;
+    border-radius: 16px;
+    color: rgba(245, 245, 245, 0.936);
+    background-color: #33333369;
+}
+
+.divAutos ul h4 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 8px #d4af37;
+} 
+
+.advantageItem {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantageItem svg {
+    filter: drop-shadow(2px 4px 6px #d4af37);
+}
+
+.boxAbout {
+    padding: 20px;
+}
+
+.boxAbout h2 {
+    color: #fafafa;
+    text-align: center;
+    font-size: 24px;
+}
+
+.spanColorTwo {
+    color: #fafafa;
+}
+
+.boxAbout h3 {
+    color: rgb(0, 0, 0);
+    background-color: #d4af37df;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.boxAbout p {
+    color: #fafafadf;
+    border-bottom: 2px solid gold;
+    border-left: 1px solid gold;
+    border-bottom-left-radius: 16px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.containerHelp {
+    padding: 20px;
+    background: url("../../assets/images/yellow.png");
+    background-position: left;
+    margin-bottom: 40px;
+}
+
+.containerHelp h2 {
+    color: #fafafa;
+    text-align: center;
+}
+
+.containerHelp p {
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerHelp ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerHelp ul li {
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.spanNumber {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.spanMini {
+    font-size: 16px;
+   
+}
+
+.boxBuy h2 {
+    color: #fafafa;
+    text-align: center;
+}
+
+.descrBuy {
+    color: #d4af37;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boxBuy {
+    padding: 20px;
+}
+
+.listBuy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.itemBuy{
+    width: 100%;
+    background: #fafafadf;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.itemBuy h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.itemBuy p {
+    text-align: center;
+    color: #D12C44;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 26px;
+    text-shadow: 3px 2px 6px #D12C44;
+}
+
+.itemBuy ul {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemBuy li {
+    padding: 12px 0;
+    border-bottom: 4px solid #b69119;
+    border-top: 4px solid #b69119;
+}
+
+.itemBuy li:nth-child(2) {
+    border: none;
+    padding: 0;
+}
+
+.stepsDiv {
+    padding: 20px;
+}
+
+.stepsDiv h2 {
+    color: #fafafadf;
+    text-align: center;  
+}
+
+.descrDiv {
+    color: #b69119;
+    text-align: center;
+    font-size: 18px;
+}
+
+.stepsDiv ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.itemSteps {
+    border-top: 2px solid #b69119;
+    border-left: 2px solid #b69119;
+    padding: 8px 12px;
+    border-top-left-radius: 16px;
+    position: relative;
+    background: linear-gradient(#b6911989, #000000);
+}
+
+.boxPoz {
+    color: #b69119;
+    position: absolute;
+    top: -18px;
+    left: -12px;
+    background: #fafafa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxPoz svg {
+    width: 40px;
+    height: 40px;
+}
+
+.itemSteps h3 {
+    color: #fafafa;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px #d4af37;
+}
+
+.itemSteps p {
+    color: #fafafa;
+    margin-bottom: 0;
+}
+
+.boxIcons {
+    color: #fafafa;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowDown {
+    width: 40px;
+    height: 40px;
+    color: #b69119;
+    margin: 0 auto;
+}
+
+.infoBox {
+    padding: 20px;
+    background: url("../../assets/images/yellow.png");
+}
+
+.infoBox h2 {
+    color: #fafafa;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.listVideo {
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 440px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 16px;
+}
+
+.descrStatic {
+    color: rgb(245, 245, 245);
+    background-color: #b691198b;
+    border: 1px solid #b69119;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+}
+
+.titleQwe {
+    color: #fafafa;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.descrQwe {
+    color: #b69119;
+    text-align: center;
+    font-weight: 700;
+}
+
+.descrAnsw {
+    color: #fafafa;
+    text-align: center;
+}
+
+.faqSection {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faqItem {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faqQuestion {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.faqAnswer {
+    padding: 10px;
+    display: none;
+    font-size: 16px;
+}
+
+.show {
+    display: block;
+}
+
+/* --- Контактна секція --- */
+.contactSection {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 780px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contactText {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contactEmail {
+    color: #b69119;
+}
+
+.contactAddress {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.iconLink {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.iconLink:hover {
+    color: #b69119;
+}
+
+/* Іконки */
+.telegramIcon::before {
+    content: "✈️"; /* Замініть на іконку */
+}
+
+.phoneIcon::before {
+    content: "📞";
+}
+
+.mailIcon::before {
+    content: "✉️";
 }
