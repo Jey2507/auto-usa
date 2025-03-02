@@ -1,9 +1,14 @@
 import css from './AboutUsAuto.module.css';
-import { FaGavel, FaEye, FaTools, FaCarCrash, FaTruckLoading, FaSearch, FaWrench, FaExclamationTriangle, FaChevronDown } from "react-icons/fa";
+import { FaGavel, FaEye, FaTools, FaCarCrash, FaTruckLoading, FaSearch, FaWrench, FaExclamationTriangle } from "react-icons/fa";
 import { FaDollarSign, FaCarSide, FaShippingFast, FaHandsHelping } from "react-icons/fa";
 import { FaFileAlt, FaSignature, FaMoneyCheckAlt, FaTruck, FaFileContract } from "react-icons/fa";
 import { PiNumberCircleOneFill, PiNumberCircleTwoFill, PiNumberCircleThreeFill, PiNumberCircleFourFill, PiNumberCircleFiveFill, PiNumberCircleSixFill, PiNumberCircleSevenFill} from "react-icons/pi";
 import { HiArrowDown } from "react-icons/hi";
+import YouTubeVideo from '../YouTubeVideo/YouTubeVideo';
+import PhotoOne from "../../assets/images/photoOne.jpeg";
+import PhotoTwo from "../../assets/images/photoTwo.jpeg"
+import PhotoThree from "../../assets/images/photoThree.jpeg"
+import FaqAuto from '../FaqAuto/FaqAuto';
 
 const AboutUsAuto = () => {
     return (
@@ -306,6 +311,32 @@ const AboutUsAuto = () => {
                         </li>
                     </ul>
                 </div>
+                <div className={css.infoBox}>
+                    <h2>Что <span className={css.spanColor}>говорят</span> о нас клиенты</h2>
+                    <ul className={css.listVideo}>
+                        <li>
+                            <YouTubeVideo videoId={"OHBtKvyrNSU"}/>
+                        </li>
+                        <li>
+                            <YouTubeVideo videoId={"SHticyj-9Kg"}/>
+                        </li>
+                    </ul>
+                    <img className={css.image} src={PhotoOne} alt="One" />
+                    <img className={css.image} src={PhotoTwo} alt="Two" />
+                    <img className={css.image} src={PhotoThree} alt="Three" />
+                    <p className={css.descrStatic}>По статистике, каждый кто хочет приобрести автомобиль с аукциона, 
+                        перебирает сотни вариантов, тратит времени на изучение машин
+                        и допускает множество ошибок, прежде чем находит то, что ему нужно!</p>
+                    <h3 className={css.titleQwe}>ЕСТЬ ЛИ У ВАС ДОСТАТОЧНО <span className={css.spanColor}>РЕСУРСОВ, ВРЕМЕНИ, ДЕНЕГ И ЗНАНИЙ</span>, ЧТОБЫ ДЕЛАТЬ ВСЕ САМОСТОЯТЕЛЬНО?</h3>
+                    <p className={css.descrQwe}>
+                        Готовы ли вы потратить кучу времени
+                        на самостоятельные пробы и ошибки?</p>
+                    <p className={css.descrAnsw}>Если не готовы, то ваш следующий шаг - это</p>
+                    <div className={css.centerBox}>
+                        <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                    </div>
+                </div>
+                <FaqAuto />
         </section>
     );
 };
