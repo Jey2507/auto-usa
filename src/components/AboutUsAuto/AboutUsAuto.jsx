@@ -157,6 +157,60 @@ const AboutUsAuto = () => {
                     <p>Более <span className={css.spanColor}>500</span> довольных клиентов за последний год</p>
                     <p>Более <span className={css.spanColor}>4-х лет</span> радуем вас качественным сервисом</p>
                 </div>
+                <div className={css.containerHelp}>
+                    <h2>Почему <span className={css.spanColor}>вы можете</span> нам доверять?</h2>
+                    <p>Мы гарантируем:</p>
+                    <ul>
+                        <li><span className={css.spanNumber}>1</span> <span className={css.spanColor}>Ответственный подход</span> к делу, обратную связь и качественную консультацию до момента покупки машины</li>
+                        <li><span className={css.spanNumber}>2</span> <span className={css.spanColor}>Живую связь</span> по телефону, во время покупки машины на аукционе</li>
+                        <li><span className={css.spanNumber}>3</span> <span className={css.spanColor}>Удобство оплаты.</span> Вам не нужно самостоятельно ехать на аукцион и оплачивать свою машину<br /><br />
+                            <span className={css.spanMini}>Все можно сделать в режиме онлайн по Zelle, Wire transfer, Cash app, Venmo, и без потери вашего времени</span>
+                        </li>
+                    </ul>
+                </div>
+                <div className={css.boxBuy}>
+                    <h2>Наши услуги:</h2>
+                    <p className={css.descrBuy}>Выберите подходящий вам вариант</p>
+                    <ul className={css.listBuy}>
+                        <li className={css.itemBuy}>
+                            <h3>История машины Carfax</h3>
+                            <p>$20 USD</p>
+                            <ul>
+                                <li>- PDF файл с информацией о техническом обслуживании и всей историей машины</li>
+                            </ul>
+                            <div className={css.centerBox}>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                            </div>
+                        </li>
+                        <li className={css.itemBuy}>
+                            <h3>Покупка машины с аукциона
+                            IAA/Copart</h3>
+                            <p>От $200 USD</p>
+                            <ul>
+                                <li>- История машины из Carfax (лимит 1-2)</li>
+                                <li>- Консультация по выбору машины, на что обращать внимание при выборе определенного типа машины, проблем и ремонта</li>
+                                <li>- Живая связь по телефону во время аукциона</li>
+                            </ul>
+                            <div className={css.centerBox}>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                            </div>
+                        </li>
+                        <li className={css.itemBuy}>
+                            <h3>Покупка машины с дилерских аукционов
+                            Manheim/Adessa/т.п</h3>
+                            <p>от $300 USD</p>
+                            <ul>
+                                <li>- История машины из Carfax (лимит 1-2)</li>
+                                <li>- Консультация по выбору машины, на что обращать внимание при выборе определенного типа машины, проблем и ремонта</li>
+                                <li>- Живая связь по телефону во время аукциона</li>
+                            </ul>
+                            <div className={css.centerBox}>
+                                    <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
         </section>
     );
 };

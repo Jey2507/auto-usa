@@ -203,14 +203,14 @@
 }
 
 .descrAuto {
-    color: #fafafa;
+    color: #fafafadf;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 40px;
 }
 
 .descrAutoTwo {
-    color: #fafafa;
+    color: #fafafadf;
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 80px;
@@ -291,11 +291,119 @@
 }
 
 .boxAbout p {
-    color: rgb(255, 255, 255);
+    color: #fafafadf;
     border-bottom: 2px solid gold;
     border-left: 1px solid gold;
     border-bottom-left-radius: 16px;
     padding: 8px 12px;
     font-size: 18px;
     font-weight: 600;
+}
+
+.containerHelp {
+    padding: 20px;
+    background: url("../../assets/images/yellow.png");
+    background-position: left;
+    margin-bottom: 40px;
+}
+
+.containerHelp h2 {
+    color: #fafafa;
+    text-align: center;
+}
+
+.containerHelp p {
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containerHelp ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerHelp ul li {
+    color: #fafafa;
+    font-size: 18px;
+}
+
+.spanNumber {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+.spanMini {
+    font-size: 16px;
+    text-shadow: 6px 4px 8px #d4af37;
+}
+
+.boxBuy h2 {
+    color: #fafafa;
+    text-align: center;
+}
+
+.descrBuy {
+    color: #d4af37;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boxBuy {
+    padding: 20px;
+}
+
+.listBuy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 32px;
+}
+
+.itemBuy{
+    width: 100%;
+    background: #fafafadf;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.itemBuy h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.itemBuy p {
+    text-align: center;
+    color: #D12C44;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 26px;
+    text-shadow: 3px 2px 6px #D12C44;
+}
+
+.itemBuy ul {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemBuy li {
+    padding: 12px 0;
+    border-bottom: 4px solid #b69119;
+    border-top: 4px solid #b69119;
+}
+
+.itemBuy li:nth-child(2) {
+    border: none;
+    padding: 0;
 }
