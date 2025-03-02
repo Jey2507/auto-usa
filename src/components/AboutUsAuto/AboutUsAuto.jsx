@@ -9,6 +9,7 @@ import PhotoOne from "../../assets/images/photoOne.jpeg";
 import PhotoTwo from "../../assets/images/photoTwo.jpeg"
 import PhotoThree from "../../assets/images/photoThree.jpeg"
 import FaqAuto from '../FaqAuto/FaqAuto';
+import { PhoneCall, Send } from 'lucide-react';
 
 const AboutUsAuto = () => {
     return (
@@ -337,6 +338,32 @@ const AboutUsAuto = () => {
                     </div>
                 </div>
                 <FaqAuto />
+                <div className={css.contactSection}>
+                    <h2 className={css.contactTitle}>Наши <span className={css.spanColor}>контакты</span></h2>
+                    <p className={css.contactText}>Смело пишите и звоните нам по любым <span className={css.spanColor}>вопросам</span></p>
+                    
+                    <div className={css.contactInfo}>
+                        <p className={css.contactPhone}>+1 360 953 9257</p>
+                        <p className={css.contactEmail}>autoboundllc.usa@gmail.com</p>
+                    </div>
+                    
+                    <div className={css.contactAddress}>
+                        <p>700N Hayden Island Dr Ste #276</p>
+                        <p>Portland, OR, 97217</p>
+                    </div>
+                    
+                    <div className={css.contactIcons}>
+                        <a href="https://t.me/zoia_kibysh">
+                            <Send />
+                        </a>
+                        <a href="https://invite.viber.com/?g2=AQAXDwpv8vbDzlDZEUNsDdhjbrrgYoGLN79UY5Fb8vmr3IU2r04Qa0hTf12i6nei&lang=uk" 
+                            target="_blank" 
+                            rel="noopener noreferrer" >
+                            <PhoneCall />
+                        </a>
+                    </div>
+                </div>
+
         </section>
     );
 };

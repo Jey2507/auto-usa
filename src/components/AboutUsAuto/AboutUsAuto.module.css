@@ -534,3 +534,123 @@
     color: #fafafa;
     text-align: center;
 }
+
+.faqSection {
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faqItem {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faqQuestion {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.faqAnswer {
+    padding: 10px;
+    display: none;
+    font-size: 16px;
+}
+
+.show {
+    display: block;
+}
+
+/* --- Контактна секція --- */
+.contactSection {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 780px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contactText {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contactEmail {
+    color: #b69119;
+}
+
+.contactAddress {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.iconLink {
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.iconLink:hover {
+    color: #b69119;
+}
+
+/* Іконки */
+.telegramIcon::before {
+    content: "✈️"; /* Замініть на іконку */
+}
+
+.phoneIcon::before {
+    content: "📞";
+}
+
+.mailIcon::before {
+    content: "✉️";
+}
