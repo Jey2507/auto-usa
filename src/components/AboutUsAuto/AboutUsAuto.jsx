@@ -1,7 +1,9 @@
 import css from './AboutUsAuto.module.css';
-import { FaGavel, FaEye, FaTools, FaCarCrash, FaTruckLoading, FaSearch, FaWrench, FaExclamationTriangle } from "react-icons/fa";
+import { FaGavel, FaEye, FaTools, FaCarCrash, FaTruckLoading, FaSearch, FaWrench, FaExclamationTriangle, FaChevronDown } from "react-icons/fa";
 import { FaDollarSign, FaCarSide, FaShippingFast, FaHandsHelping } from "react-icons/fa";
-
+import { FaFileAlt, FaSignature, FaMoneyCheckAlt, FaTruck, FaFileContract } from "react-icons/fa";
+import { PiNumberCircleOneFill, PiNumberCircleTwoFill, PiNumberCircleThreeFill, PiNumberCircleFourFill, PiNumberCircleFiveFill, PiNumberCircleSixFill, PiNumberCircleSevenFill} from "react-icons/pi";
+import { HiArrowDown } from "react-icons/hi";
 
 const AboutUsAuto = () => {
     return (
@@ -208,7 +210,100 @@ const AboutUsAuto = () => {
                                     <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
                             </div>
                         </li>
-
+                    </ul>
+                </div>
+                <div className={css.stepsDiv}>
+                    <h2>Этапы <span className={css.spanColor}>сотрудничества</span> с нами</h2>
+                    <p className={css.des}>7 простых шагов</p>
+                    <ul>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaFileAlt />
+                                <h3>Короткая анкета и консультация</h3>
+                            </div>
+                            <p>После заполнения анкеты, с вами свяжется наш специалист и ответит на все вопросы...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleOneFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaSignature />
+                                <h3>Подписание договора</h3>
+                            </div>
+                            <p>Специалист подготовит для вас договор, где будут вписаны все пункты нашего с вами сотрудничества...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleTwoFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaDollarSign />
+                                <h3>Внесение депозита</h3>
+                            </div>
+                            <p>После подписания договора вы вносите депозит, в размере 10% от вашей максимальной ставки...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleThreeFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaGavel />
+                                <h3>Покупка вашего авто на аукционе</h3>
+                            </div>
+                            <p>Мы играем автомобиль на аукционе, по той ставке которую обсудили заранее...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleFourFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaMoneyCheckAlt />
+                                <h3>Полная оплата</h3>
+                            </div>
+                            <p>После выигрыша, мы выставляем вам счет на полную оплату, который нужно оплатить в течении 3-х суток...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleFiveFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaTruck />
+                                <h3>Доставка автомобиля</h3>
+                            </div>
+                            <p>После полной оплаты вам необходимо забрать автомобиль с аукциона в течении 3-4-х дней...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleSixFill />
+                            </div>
+                        </li>
+                        <li className={css.arrowDown}>
+                        <HiArrowDown />
+                        </li>
+                        <li className={css.itemSteps}>
+                            <div className={css.boxIcons}>
+                                <FaFileContract />
+                                <h3>Документы</h3>
+                            </div>
+                            <p>В течении 1-3 недель вы получаете готовый пакет документов на свой почтовый адрес...</p>
+                            <div className={css.boxPoz}>
+                                <PiNumberCircleSevenFill />
+                            </div>
+                        </li>
                     </ul>
                 </div>
         </section>

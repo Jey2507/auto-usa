@@ -337,7 +337,7 @@
 
 .spanMini {
     font-size: 16px;
-    text-shadow: 6px 4px 8px #d4af37;
+   
 }
 
 .boxBuy h2 {
@@ -406,4 +406,78 @@
 .itemBuy li:nth-child(2) {
     border: none;
     padding: 0;
+}
+
+.stepsDiv {
+    padding: 20px;
+}
+
+.stepsDiv h2 {
+    color: #fafafadf;
+    text-align: center;  
+}
+
+.descrDiv {
+    color: #b69119;
+    text-align: center;
+    font-size: 18px;
+}
+
+.stepsDiv ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.itemSteps {
+    border-top: 2px solid #b69119;
+    border-left: 2px solid #b69119;
+    padding: 8px 12px;
+    border-top-left-radius: 16px;
+    position: relative;
+    background: linear-gradient(#b6911989, #000000);
+}
+
+.boxPoz {
+    color: #b69119;
+    position: absolute;
+    top: -18px;
+    left: -12px;
+    background: #fafafa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxPoz svg {
+    width: 40px;
+    height: 40px;
+}
+
+.itemSteps h3 {
+    color: #fafafa;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 8px #d4af37;
+}
+
+.itemSteps p {
+    color: #fafafa;
+    margin-bottom: 0;
+}
+
+.boxIcons {
+    color: #fafafa;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowDown {
+    width: 40px;
+    height: 40px;
+    color: #b69119;
+    margin: 0 auto;
 }
