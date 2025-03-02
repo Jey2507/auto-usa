@@ -11,9 +11,9 @@
 }
 
 .fon {
-    background: 
-    linear-gradient( #00000000, #00000048,#000000), 
-    url("../../assets/images/fon.jpg");
+    background:
+        linear-gradient(#00000000, #00000048, #000000),
+        url("../../assets/images/fon.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@
 }
 
 .bigBox {
-    background-color: #ffffffe6; 
+    background-color: #ffffffe6;
     padding: 20px;
     max-width: 600px;
     margin: auto;
@@ -78,7 +78,7 @@
 }
 
 .texttwo {
-    color: #D12C44; 
+    color: #D12C44;
     padding-bottom: 4px;
     margin: 0 auto;
     width: 260px;
@@ -100,7 +100,7 @@
 
 
 .boxTwo h3 {
-    color: #D12C44; 
+    color: #D12C44;
     font-family: "Montserrat", sans-serif;
     width: 250px;
     margin: 0 auto;
@@ -168,7 +168,8 @@
 }
 
 .sectionTitle::before {
-    content: '\1F4C4'; /* Іконка документа */
+    content: '\1F4C4';
+    /* Іконка документа */
     font-size: 28px;
 }
 
@@ -249,7 +250,8 @@
     border-radius: 16px;
     color: rgba(245, 245, 245, 0.936);
     background-color: #33333369;
-    display: flex;gap: 12px;
+    display: flex;
+    gap: 12px;
     align-items: center;
 }
 
@@ -269,7 +271,8 @@
     border-radius: 16px;
     color: rgba(245, 245, 245, 0.837);
     background-color: #33333369;
-    display: flex;gap: 12px;
+    display: flex;
+    gap: 12px;
     align-items: center;
 }
 
@@ -330,20 +333,24 @@
     padding: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439) {
     .boxHero {
         display: flex;
         margin-bottom: 20px;
         gap: 20px;
+        justify-content: center;
+        margin-top: 200px;
     }
 
     .tpsContainer {
         padding: 20px;
         width: 100%;
     }
+
     .title {
         font-size: 24px;
     }
+
     .subtitle {
         font-size: 16px;
         width: 400px;
@@ -361,7 +368,9 @@
     .sectionTitle {
         font-size: 20px;
     }
-    .btnTelegram, .btnWhatsapp {
+
+    .btnTelegram,
+    .btnWhatsapp {
         font-size: 14px;
         padding: 8px 12px;
     }
@@ -373,15 +382,15 @@
     .boxTPS {
         margin-top: 32px;
     }
-    
+
     .textTPS {
         font-size: 22px;
     }
-    
+
     .descrTPS {
         font-size: 18px;
     }
-    
+
     .listTPS {
         max-width: 800px;
         width: 100%;
@@ -398,38 +407,42 @@
 }
 
 /* Десктопна версія 1440px */
-@media screen and (min-width: 1440px) {
-    .containerHero{
+@media screen and (min-width: 1439px) {
+    .containerHero {
         display: flex;
 
     }
-.boxHeroQue{
-    display: flex;
-    flex-direction: column;
-}
-    .fon{
-        background:
-                linear-gradient(#00000000, #00000048, #000000),
-                url("../../assets/images/fonDesktop.JPG");
-        background-size: cover;
-            background-position: bottom;
-            background-repeat: no-repeat;
-            height: 700px;
-            margin: 20px auto 40px auto;
-            display: flex;
-            padding-top: 60px;
-            padding-left: 12px;
-            padding-right: 12px;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 100%;
-            border-radius: 20px;
+
+    .boxHeroQue {
+        display: flex;
+        flex-direction: column;
     }
+
+    .fon {
+        background:
+            linear-gradient(#00000000, #00000048, #000000),
+            url("../../assets/images/fonDesktop.JPG");
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 700px;
+        margin: 20px auto 40px auto;
+        display: flex;
+        padding-top: 60px;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
     .tpsContainer {
         padding: 40px;
         margin-top: 0px;
     }
+
     .title {
         font-size: 36px;
         padding-top: 0;
@@ -447,7 +460,7 @@
         bottom: -16px;
     }
 
-   
+
     .bigBox {
         max-width: 700px;
         margin: 60px 0 0 0;
@@ -455,14 +468,16 @@
 
     .subtitle {
         font-size: 22px;
-        width: 500px;
-        min-width: 490px;
+        width: 470px;
+        min-width: 400px;
         height: max-content;
         padding: 16px 20px;
     }
-.boxQue>p{
-    text-align: center;
-}
+
+    .boxQue>p {
+        text-align: center;
+    }
+
     .image {
         max-width: 840px;
     }
@@ -476,8 +491,8 @@
 
     .boxHero {
         gap: 0;
-       width: 350px;
-        
+        width: 350px;
+        margin-top: 200px;
     }
 
     .boxTPS {
@@ -487,18 +502,19 @@
         border: 2px dashed whitesmoke;
         border-radius: 6px;
     }
-    
+
     .textTPS {
         margin-top: 0;
         margin-bottom: 12px;
     }
-    
+
     .listTPS {
         padding: 24px 8px 0 8px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 12px;
+        max-width: none;
     }
 
     .listTPSTwo {
@@ -521,7 +537,7 @@
         align-items: center;
     }
 
-    
+
     .listTPS li {
         padding: 8px 16px;
         display: flex;
@@ -535,14 +551,14 @@
     }
 
     .descrHelp {
-       width: max-content;
-       margin: 40px auto;
+        width: max-content;
+        margin: 40px auto;
     }
 
     .descrTPS {
         color: whitesmoke;
     }
-    
+
     .descrForm {
         color: rgba(255, 255, 255, 0.812);
         border-bottom: 2px solid rgba(255, 255, 255, 0.812);
@@ -561,12 +577,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(90deg,rgb(248, 237, 227, 0.0), rgb(248, 237, 227, 0.35),rgb(248, 237, 227, 0.0));
+        background-image: linear-gradient(90deg, rgb(248, 237, 227, 0.0), rgb(248, 237, 227, 0.35), rgb(248, 237, 227, 0.0));
         background-size: cover;
         background-position: center;
         border-radius: 6px;
     }
-    
+
     .ctaButton {
         padding: 14px 28px;
     }
