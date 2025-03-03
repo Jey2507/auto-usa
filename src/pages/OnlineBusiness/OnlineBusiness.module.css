@@ -351,29 +351,29 @@
         align-items: center;
 
     }
-.container{
-    margin-top: 0;
-}
+    .container{
+        margin-top: 0;
+        padding-top: 0;
+    }
 
     .fon {
         background:
             linear-gradient(#00000000, #00000048, #000000),
             url("../../assets/images/businnes.JPG");
-
         background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
         height: 700px;
-        margin: 20px auto 40px auto;
+        margin: 0px auto 40px auto;
         display: flex;
-        padding-top: 60px;
+        padding-top: 80px;
         padding-left: 12px;
         padding-right: 12px;
         align-items: center;
         justify-content: center;
         width: 100%;
         max-width: 100%;
-        border-radius: 20px;
+        border-radius: 0px;
 
     }
 

@@ -102,7 +102,7 @@ const AboutUsAuto = () => {
                         </li>        
                     </ul>
                     <div className={css.centerBox}>
-                            <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                            <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButtonaRed} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
                      </div>
                 </div>
                 <div className={css.divAutos}>
@@ -328,13 +328,13 @@ const AboutUsAuto = () => {
                     <p className={css.descrStatic}>По статистике, каждый кто хочет приобрести автомобиль с аукциона, 
                         перебирает сотни вариантов, тратит времени на изучение машин
                         и допускает множество ошибок, прежде чем находит то, что ему нужно!</p>
-                    <h3 className={css.titleQwe}>ЕСТЬ ЛИ У ВАС ДОСТАТОЧНО <span className={css.spanColor}>РЕСУРСОВ, ВРЕМЕНИ, ДЕНЕГ И ЗНАНИЙ</span>, ЧТОБЫ ДЕЛАТЬ ВСЕ САМОСТОЯТЕЛЬНО?</h3>
+                    <h3 className={css.titleQwe}>ЕСТЬ ЛИ У ВАС ДОСТАТОЧНО <span className={css.spanColorRed}>РЕСУРСОВ, ВРЕМЕНИ, ДЕНЕГ И ЗНАНИЙ</span>, ЧТОБЫ ДЕЛАТЬ ВСЕ САМОСТОЯТЕЛЬНО?</h3>
                     <p className={css.descrQwe}>
                         Готовы ли вы потратить кучу времени
                         на самостоятельные пробы и ошибки?</p>
                     <p className={css.descrAnsw}>Если не готовы, то ваш следующий шаг - это</p>
                     <div className={css.centerBox}>
-                        <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
+                        <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButtonaRed} rel="noreferrer">ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ</a>
                     </div>
                 </div>
                 <FaqAuto />

@@ -83,6 +83,28 @@
     background: linear-gradient(to bottom, #444 0%, gold 100%);
 }
 
+.ctaButtonaRed {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin: 0 auto 40px auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to bottom, #333 0%, #D12C44 100%);
+    border: none;
+    width: 280px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ctaButtonaRed:hover {
+    background: linear-gradient(to bottom, #444 0%, #D12C44 100%);
+}
+
 .divChoose {
     padding: 20px;
     background-color: #000000;
@@ -508,13 +530,17 @@
 
 .descrStatic {
     color: rgb(245, 245, 245);
-    background-color: #b691198b;
-    border: 1px solid #b69119;
+    background-color: #730000ab;
+    border: 1px solid #D12C44;
     border-radius: 16px;
     padding: 12px;
     text-align: center;
     margin-bottom: 32px;
     font-size: 20px;
+}
+
+.spanColorRed {
+    color: #D12C44;
 }
 
 .titleQwe {
@@ -525,7 +551,7 @@
 }
 
 .descrQwe {
-    color: #b69119;
+    color: #D12C44;
     text-align: center;
     font-weight: 700;
 }
@@ -653,4 +679,16 @@
 
 .mailIcon::before {
     content: "✉️";
+}
+
+@media (min-width: 1440px) {
+    .backCar{
+        background: 
+        linear-gradient( #00000000, #00000000, #000000), 
+        url("../../assets/images/onlineBusinnes.jpg");
+        background-position: top;
+        background-size: cover;
+        height: 700px;
+        margin-top: 0;
+    }
 }
