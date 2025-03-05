@@ -58,18 +58,10 @@
 
 .twoBox ul li:nth-child(1) {
     border-left: 3px solid #D12C44;
-    background: url("../../assets/images/fon.jpg");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 .twoBox ul li:nth-child(4) {
     border-left: 3px solid #D12C44;
-    background: url("../../assets/images/fonTwo.jpg");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 .twoBox ul li:nth-child(2) {
@@ -78,10 +70,6 @@
 
 .twoBox ul li:nth-child(3) {
     border-left: 3px solid #b69119;
-    background: url("../../assets/images/car.jpg");
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
 }
 
 .twoBox ul li:nth-child(1) h3 {
