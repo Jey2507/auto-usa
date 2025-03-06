@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 52px;
 }
 
 .twoBox ul li {
@@ -97,3 +98,63 @@
     margin-bottom: 0;
     width: 340px;
 }
+
+.centerBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 auto 40px auto;
+    background: linear-gradient(to bottom, #333 0%, #d22 100%);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: linear-gradient(to bottom, #444 0%, #e33 100%);
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffffe0;
+    display: flex;
+    text-transform: uppercase;
+    width: 180px;
+    font-size: 18px;
+    height: 36px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 100ms linear;
+    border: 2px solid #000000da;
+    transition: border-color 300ms linear, color 300ms linear;
+  }
+  
+  .active {
+    color:#D12C44;
+    border-bottom-color: #D12C44;
+  }
+  
+  .link:hover {
+    border-bottom-color: #D12C44;
+  }
+
+  .listHeader {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+  }
