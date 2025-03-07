@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { NavLink } from "react-router-dom";
 import css from "../Navigation/Navigation.module.css"
-import Logo from "../../assets/images/logo.png";
 import { useState } from "react";
 
 const getNavLinkClass = ({ isActive }) => {

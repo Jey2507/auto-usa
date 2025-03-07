@@ -1,11 +1,7 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import css from "../../pages/HomePage/HomePage.module.css";
-import clsx from "clsx";
-import { Suspense } from "react";
-
-const getNavLinkClass = ({ isActive }) => {
-  return clsx(css.link, isActive && css.active);
-};
+// import AboutMe from "../../components/AboutMe/AboutMe";
+import Socials from "../../components/Socials/Socials";
 
 export default function HomePage() {
   return (
@@ -31,6 +27,7 @@ export default function HomePage() {
                 Моя команда пошагово помогает с переездом в США, адаптации по приезду, получением
                 всех необходимых документов и дальнейшей легализации
               </p>
+              <p className={css.buttonP}>Перейти на страницу</p>
             </NavLink>
           </li>
 
@@ -42,6 +39,8 @@ export default function HomePage() {
                 и успешно продвигает бизнеса на рынке США и СНГ, а также обучаем направлению СММ и
                 маркетинг.
               </p>
+              <p className={css.buttonP}>Перейти на страницу</p>
+
             </NavLink>
           </li>
 
@@ -49,34 +48,25 @@ export default function HomePage() {
             <NavLink to="/auto">
               <h3>АВТОАУКЦИОНЫ</h3>
               <p>Покупаем и продаем автомобили через аукционы США, а также обучаем этому направлению!</p>
+              <p className={css.buttonP}>Перейти на страницу</p>
             </NavLink>
           </li>
           <li>
             <NavLink to="/business">
               <h3>Online Business</h3>
               <p>Больше информации об иммиграции и возможностях, которые мы предлагаем для открытия бизнеса</p>
+              <p className={css.buttonP}>Перейти на страницу</p>
             </NavLink>
           </li>
         </ul>
         <div className={css.centerBox}>
           <a href="https://t.me/zoia_kibysh" target="_blank" className={css.ctaButton} rel="noreferrer">
-            Подробнее
+              Написать в телеграм
           </a>
         </div>
       </div>
-      <div>
-        <ul className={css.listHeader}>
-          <li>
-            <NavLink to="aboutme" className={getNavLinkClass}>Обо мне</NavLink>
-          </li>
-          <li>
-            <NavLink to="socials" className={getNavLinkClass}>Реклама</NavLink>
-          </li>
-        </ul>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Outlet />
-        </Suspense>
-      </div>
+      {/* <AboutMe /> */}
+      <Socials />
     </section>
   );
 }
