@@ -12,7 +12,7 @@ const services = [
             </ul>
         )
     },
-    
+
     {
         title: "Покупка автомобиля",
         description: (
@@ -32,7 +32,7 @@ const services = [
             </ul>
         )
     },
-    
+
     {
         title: "Бизнес в США",
         description: (
@@ -107,7 +107,6 @@ const services = [
 
 const ServicesImmigration = () => {
     const [heights, setHeights] = useState([]);
-    const [descHeights, setDescHeights] = useState([]);
     const cardRefs = useRef([]);
     const descRefs = useRef([]);
 
@@ -130,6 +129,7 @@ const ServicesImmigration = () => {
                 }
 
                 setHeights(newHeights);
+
             }
         };
 
@@ -144,10 +144,14 @@ const ServicesImmigration = () => {
             <div className={styles.servicesGrid}>
                 {services.map((service, index) => (
                     <div key={index} className={styles.serviceItem} ref={(el) => (cardRefs.current[index] = el)} style={{ height: heights[index] || "auto" }}>
+
                         <h3 className={styles.serviceTitle}>{service.title}</h3>
-                        <p className={styles.serviceDescription} ref={(el) => (descRefs.current[index] = el)} style={{ height: descHeights[index] || "auto" }}>
+
+                        <div className={styles.serviceItemBorder}>
+                            <p className={styles.serviceDescription}>
                             {service.description}
                         </p>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -56,6 +56,10 @@ const OnePartPage = () => {
         </div>
         <PricesImmigration />
         <div className={styles.boxTPS}>
+          <div className={styles.textContainer}>
+            <h3 className={styles.textTPS}>Документы для подачи <span className={styles.spanColor}>I-821</span></h3>
+          </div>
+          <div>
           <h3 className={styles.textTPS}>Документы для подачи заявки на TPS <span className={styles.spanColor}>(Форма I-821)</span></h3>
           <ul className={styles.listTPS}>
             <li><FaPassport /> Заграничный паспорт <br />(все страницы, включая пустые)</li>
@@ -71,7 +75,8 @@ const OnePartPage = () => {
             <li><FaGlobe /> Список стран, в которые вы путешествовали</li>
             <li><FaBalanceScale /> Находитесь ли вы в иммиграционном процессе в США</li>
             <li><FaExclamationTriangle /> Были ли у вас проблемы с законом (аресты, судимости и т. д.)</li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={styles.boxAny}>

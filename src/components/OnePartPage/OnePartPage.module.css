@@ -484,6 +484,7 @@
 
     .image {
         max-width: 840px;
+        border-radius: 20px;
     }
 
     .boxFlex {
@@ -500,16 +501,14 @@
     }
 
     .boxTPS {
-        max-width: 700px;
-        margin-top: 60px;
-        padding: 16px 24px;
-        border: 2px dashed whitesmoke;
-        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .textTPS {
         margin-top: 0;
         margin-bottom: 12px;
+
     }
 
     .listTPS {
@@ -519,6 +518,12 @@
         flex-wrap: wrap;
         gap: 12px;
         max-width: none;
+        max-width: 700px;
+        margin-top: 60px;
+        padding: 32px 24px 32px 32px;
+        border: 2px solid whitesmoke;
+        margin-bottom: 0;
+        border-radius: 6px;
     }
 
     .listTPSTwo {
@@ -540,12 +545,14 @@
         gap: 14px;
         align-items: center;
     }
-
+.divDoc>.textContainer{
+        background-image: linear-gradient(90deg, rgb(248, 237, 227, 0.0), rgba(255, 0, 0, 0.426), rgb(248, 237, 227, 0.0));
+}
 
     .listTPS li {
         padding: 8px 16px;
         display: flex;
-        width: 308px;
+        width: 280px;
         gap: 14px;
         align-items: center;
     }

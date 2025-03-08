@@ -94,8 +94,9 @@
     font-size: 26px;
     font-weight: 700;
     color: #D12C44;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     margin-top: 0;
+    height: 60px;
 }
 
 .serviceDescription {
@@ -103,10 +104,15 @@
     color: #666666;
     font-weight: 600;
     line-height: 1.5;
-    border: 6px solid #D12C44;
-    border-radius: 16px;
+   
     padding: 12px;
     margin-bottom: 0;
+}
+
+.serviceItemBorder{
+    border: 6px solid #D12C44;
+        border-radius: 16px;
+        height: 100%;
 }
 
 .flexAlign {
@@ -237,6 +243,10 @@
     .ctaButton {
         padding: 14px 28px;
     }
+
+        .serviceItemBorder{
+            height: 80%;
+        }
 }
 
 @media (max-width: 767px) {
@@ -271,6 +281,9 @@
     .ctaButton {
         padding: 12px 25px;
     }
+        .serviceItemBorder{
+            height: max-content;
+        }
 }
 
 @media  (min-width: 1440px) {
@@ -293,6 +306,10 @@
     justify-items: center;
         row-gap: 45px;
         /* width: 1340px; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
     }
 
     .serviceItem {

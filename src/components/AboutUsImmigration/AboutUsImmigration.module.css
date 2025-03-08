@@ -76,7 +76,7 @@
     font-size: 20px;
 }
 
-.descrQue { 
+.descrQue {
     margin-top: 0;
     text-align: center;
     font-size: 16px;
@@ -84,7 +84,7 @@
 }
 
 .bigBox {
-    background-color: #ffffffe6; 
+    background-color: #ffffffe6;
     padding: 20px;
     max-width: 600px;
     margin: auto;
@@ -110,7 +110,7 @@
 }
 
 .texttwo {
-    color: #D12C44; 
+    color: #D12C44;
     padding-bottom: 4px;
     margin: 0 auto;
     width: 260px;
@@ -124,14 +124,85 @@
 
 
 
+
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .descr,
+    .listCowo p {
+        font-size: 18px;
+    }
+
+    .listCowo h3 {
+        font-size: 22px;
+    }
+
+    .help {
+        font-size: 22px;
+    }
+
+    .descrQue {
+        font-size: 18px;
+    }
+
+    .descrHelp {
+        font-size: 20px;
+    }
+
+    .texttwo {
+        font-size: 26px;
+    }
+
+    .list {
+        font-size: 18px;
+    }
+}
+
 @media(min-width:1440px) {
 
-    .aboutUsSection>div{
+    .aboutUsSection>div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-   .listCowo{max-width: 80%;
-    width: max-content;
-   } 
+
+    .listCowo {
+        max-width: 80%;
+        width: max-content;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .descr,
+    .listCowo p {
+        font-size: 20px;
+    }
+
+    .listCowo h3 {
+        font-size: 24px;
+    }
+
+    .help {
+        font-size: 24px;
+    }
+
+    .descrQue {
+        font-size: 20px;
+    }
+
+    .descrHelp {
+        font-size: 22px;
+    }
+
+    .texttwo {
+        font-size: 28px;
+    }
+         .list {
+             font-size: 20px;
+         }
 }
