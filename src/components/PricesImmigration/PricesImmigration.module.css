@@ -155,8 +155,7 @@ margin: 0;
     align-items: center;
     }
 
-    .gridContainer{
-    }
+    
     .title {
         font-size: 30px;
     }
@@ -183,6 +182,9 @@ margin: 0;
     .title {
         font-size: 48px;
     }
+        .gridContainer{
+            margin-bottom: 40px;
+        }
 
     .subtitle {
         font-size: 18px;
